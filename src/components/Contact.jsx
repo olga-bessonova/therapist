@@ -6,7 +6,6 @@ import {
   CALENDLY_URL,
   PHONE,
   PHONE_HREF,
-  TELEGRAM_HANDLE,
   TELEGRAM_URL,
   TIKTOK_URL,
   YOUTUBE_URL,
@@ -36,7 +35,6 @@ export default function Contact() {
             className="flex items-center gap-2 hover:text-cream"
           >
             <TelegramIcon className="h-5 w-5" />
-            {TELEGRAM_HANDLE}
           </a>
 
           <Divider />

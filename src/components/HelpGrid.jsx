@@ -33,7 +33,7 @@ export default function HelpGrid() {
         <MoodGallery
           lang={lang}
           images={HELP_IMAGES}
-          className="mt-8 flex gap-3 overflow-x-auto pb-2 lg:hidden"
+          className="mt-8 flex justify-center gap-3 overflow-x-auto pb-2 lg:hidden"
         />
 
         {/* mobile/tablet: plain 2-col card grid, no row-matched photos */}

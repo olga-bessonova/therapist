@@ -18,7 +18,10 @@ export default function FaqTabs() {
   return (
     <section className="bg-cream py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <MoodGallery lang={lang} className="mb-10 flex gap-3 overflow-x-auto pb-2 lg:hidden" />
+        <MoodGallery
+          lang={lang}
+          className="mb-10 flex justify-center gap-3 overflow-x-auto pb-2 lg:hidden"
+        />
 
         <div className="lg:grid lg:grid-cols-[1fr_220px] lg:items-start lg:gap-12 xl:grid-cols-[1fr_260px]">
           <div className="mx-auto max-w-3xl lg:mx-0 lg:max-w-none">

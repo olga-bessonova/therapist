@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { CalendarCheck } from "lucide-react";
 import { useLanguage } from "../i18n/LanguageContext";
 import { CALENDLY_URL } from "../config";
 
@@ -27,7 +26,7 @@ export default function FloatingBookButton() {
       }`}
     >
       <span className="flex h-16 w-16 shrink-0 items-center justify-center sm:h-[100px] sm:w-[100px]">
-        <CalendarCheck className="h-6 w-6 sm:h-9 sm:w-9" />
+        <img src="/favicon.png" alt="" className="h-8 w-8 sm:h-12 sm:w-12" />
       </span>
       <span className="overflow-hidden pr-0 text-sm font-medium whitespace-nowrap transition-[padding] duration-300 group-hover:pr-7 sm:text-base sm:group-hover:pr-9">
         {t.nav.book}
