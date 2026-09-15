@@ -6,6 +6,21 @@ import VideoLightbox from "./VideoLightbox";
 
 const SCROLL_AMOUNT = 300;
 
+// Accepts a bare video ID or a full YouTube URL (youtu.be/ID, watch?v=ID, embed/ID).
+function extractYoutubeId(value) {
+  if (!value) return "";
+  try {
+    const url = new URL(value);
+    if (url.hostname.includes("youtu.be")) return url.pathname.slice(1);
+    if (url.searchParams.has("v")) return url.searchParams.get("v");
+    const embedMatch = url.pathname.match(/\/embed\/([\w-]+)/);
+    if (embedMatch) return embedMatch[1];
+    return "";
+  } catch {
+    return value.trim();
+  }
+}
+
 export default function Reviews() {
   const { lang, t } = useLanguage();
   const trackRef = useRef(null);
@@ -37,12 +52,7 @@ export default function Reviews() {
           className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {reviews.map((item) => (
-            <ReviewCard
-              key={item.id}
-              item={item}
-              lang={lang}
-              onPlay={() => item.youtubeId && setActiveVideo(item.youtubeId)}
-            />
+            <ReviewCard key={item.id} item={item} lang={lang} onPlay={setActiveVideo} />
           ))}
         </div>
 
@@ -60,37 +70,37 @@ export default function Reviews() {
 }
 
 function ReviewCard({ item, lang, onPlay }) {
-  const hasVideo = Boolean(item.youtubeId);
+  const youtubeId = extractYoutubeId(item.youtubeId);
+  const hasVideo = Boolean(youtubeId);
   const thumbnail =
-    item.thumbnail || (hasVideo ? `https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg` : null);
+    item.thumbnail || (hasVideo ? `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg` : null);
 
   return (
     <div className="w-64 shrink-0 snap-start sm:w-72">
       <button
         type="button"
-        onClick={onPlay}
+        onClick={() => onPlay(youtubeId)}
         disabled={!hasVideo}
         className={`group relative flex aspect-video w-full items-center justify-center overflow-hidden rounded-2xl bg-olive-700 ${
           hasVideo ? "cursor-pointer" : "cursor-default opacity-60"
         }`}
       >
         {thumbnail ? (
-          <img src={thumbnail} alt={item.name} className="h-full w-full object-cover" />
+          <img src={thumbnail} alt={item.name[lang]} className="h-full w-full object-cover" />
         ) : (
           <Video className="h-8 w-8 text-olive-100" strokeWidth={1.5} />
         )}
+        <span className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-black/0 to-black/0" />
         <span
-          className={`absolute inset-0 flex items-center justify-center bg-black/20 transition ${
-            hasVideo ? "group-hover:bg-black/30" : ""
+          className={`absolute bottom-3 left-3 flex h-10 w-10 items-center justify-center rounded-full bg-cream/90 text-olive-900 shadow-md transition ${
+            hasVideo ? "group-hover:scale-110" : ""
           }`}
         >
-          <span className="flex h-12 w-12 items-center justify-center rounded-full bg-cream/90 text-olive-900 shadow-md">
-            <Play className="ml-0.5 h-5 w-5" fill="currentColor" />
-          </span>
+          <Play className="ml-0.5 h-4 w-4" fill="currentColor" />
         </span>
       </button>
 
-      <h3 className="font-display mt-3 text-base font-medium text-ink">{item.name}</h3>
+      <h3 className="font-display mt-3 text-base font-medium text-ink">{item.name[lang]}</h3>
       <p className="mt-1 text-sm leading-relaxed text-ink-soft">{item.quote[lang]}</p>
     </div>
   );

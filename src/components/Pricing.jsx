@@ -5,8 +5,14 @@ export default function Pricing() {
   const { t } = useLanguage();
 
   return (
-    <section id="pricing" className="scroll-mt-20 bg-cream py-16 sm:py-24">
-      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+    <section id="pricing" className="relative scroll-mt-20 overflow-hidden bg-cream py-16 sm:py-24">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url(/images/pexels-sarahdorweiler-8408553.jpg)" }}
+      />
+      <div className="absolute inset-0 bg-cream/50" />
+
+      <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
         <h2 className="font-display text-center text-2xl font-medium text-ink sm:text-3xl">
           {t.pricing.heading}
         </h2>
@@ -44,16 +50,6 @@ export default function Pricing() {
                 ))}
               </div>
 
-              {card.cta && (
-                <a
-                  href={CALENDLY_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-5 inline-block rounded-full bg-olive-800 px-4 py-2 text-center text-sm font-medium text-cream transition hover:bg-olive-900"
-                >
-                  {card.cta}
-                </a>
-              )}
             </div>
           ))}
         </div>

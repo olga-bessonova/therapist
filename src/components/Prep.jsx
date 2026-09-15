@@ -6,8 +6,17 @@ export default function Prep() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section id="prep" className="scroll-mt-20 bg-olive-900 py-16 text-cream sm:py-24">
-      <div className="mx-auto max-w-3xl px-5 sm:px-8">
+    <section
+      id="prep"
+      className="relative scroll-mt-20 overflow-hidden bg-olive-900 py-16 text-cream sm:py-15"
+    >
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url(/images/pexels-abdullah-asad-154796132-12658683.jpg)" }}
+      />
+      <div className="absolute inset-0 bg-olive-900/80" />
+
+      <div className="relative mx-auto max-w-3xl px-5 sm:px-8">
         <h2 className="font-display text-center text-2xl font-medium sm:text-3xl">
           {t.prep.heading}
         </h2>

@@ -5,31 +5,31 @@
 //   3. Grab or generate a thumbnail image (YouTube auto-thumbnail works:
 //      https://img.youtube.com/vi/THIS_PART/hqdefault.jpg) and put the file in src/assets/reviews/,
 //      or just point `thumbnail` at that YouTube URL directly.
-//   4. Fill in the real name and a short 1–2 line quote, in both languages.
+//   4. Fill in the real name (in both languages) and a short 1–2 line quote, in both languages.
 export const reviews = [
   {
     id: 1,
-    name: "Client 1",
-    youtubeId: "",
+    name: { en: "Larisa", ru: "Лариса" },
+    youtubeId: "https://youtu.be/-ww-aZQmx1w",
     thumbnail: "",
     quote: {
-      en: "I finally let go of a fear I'd carried for years.",
-      ru: "Я наконец отпустила страх, с которым жила много лет.",
+      en: "Chynara responded to my request within minutes and, through one warm, easy session, helped me uncover and release the difficulty I'd been stuck on after a hard client experience — I recommend her as a skilled, wonderfully easy-to-talk-to hypnotherapist.",
+      ru: "Чинара откликнулась на мой запрос за считанные минуты и за одну лёгкую, тёплую сессию помогла мне найти и снять тяжесть, застрявшую после сложного случая с клиентом — рекомендую её как отличного гипнотерапевта, с которой невероятно легко и приятно общаться.",
     },
   },
   {
     id: 2,
-    name: "Client 2",
-    youtubeId: "",
+    name: { en: "Valeria", ru: "Валерия" },
+    youtubeId: "https://youtu.be/mudoJLIUvUU",
     thumbnail: "",
     quote: {
-      en: "After our sessions my sleep completely changed for the better.",
-      ru: "После сеансов мой сон полностью изменился в лучшую сторону.",
+      en: "Chynara helped me uncover the fear behind my constant clumsiness around light clothes through a regression session, and a week later I've worn white without a single mishap and felt truly calm doing it.",
+      ru: "Чинара помогла мне через регрессию найти корень моего вечного неуклюжества со светлой одеждой, и через неделю я спокойно хожу в белом без единой неприятности.",
     },
   },
   {
     id: 3,
-    name: "Client 3",
+    name: { en: "Client 3", ru: "Клиент 3" },
     youtubeId: "",
     thumbnail: "",
     quote: {
@@ -39,7 +39,7 @@ export const reviews = [
   },
   {
     id: 4,
-    name: "Client 4",
+    name: { en: "Client 4", ru: "Клиент 4" },
     youtubeId: "",
     thumbnail: "",
     quote: {
@@ -49,7 +49,7 @@ export const reviews = [
   },
   {
     id: 5,
-    name: "Client 5",
+    name: { en: "Client 5", ru: "Клиент 5" },
     youtubeId: "",
     thumbnail: "",
     quote: {
@@ -59,7 +59,7 @@ export const reviews = [
   },
   {
     id: 6,
-    name: "Client 6",
+    name: { en: "Client 6", ru: "Клиент 6" },
     youtubeId: "",
     thumbnail: "",
     quote: {
@@ -69,7 +69,7 @@ export const reviews = [
   },
   {
     id: 7,
-    name: "Client 7",
+    name: { en: "Client 7", ru: "Клиент 7" },
     youtubeId: "",
     thumbnail: "",
     quote: {
@@ -79,7 +79,7 @@ export const reviews = [
   },
   {
     id: 8,
-    name: "Client 8",
+    name: { en: "Client 8", ru: "Клиент 8" },
     youtubeId: "",
     thumbnail: "",
     quote: {
@@ -89,7 +89,7 @@ export const reviews = [
   },
   {
     id: 9,
-    name: "Client 9",
+    name: { en: "Client 9", ru: "Клиент 9" },
     youtubeId: "",
     thumbnail: "",
     quote: {
@@ -99,7 +99,7 @@ export const reviews = [
   },
   {
     id: 10,
-    name: "Client 10",
+    name: { en: "Client 10", ru: "Клиент 10" },
     youtubeId: "",
     thumbnail: "",
     quote: {
@@ -109,7 +109,7 @@ export const reviews = [
   },
   {
     id: 11,
-    name: "Client 11",
+    name: { en: "Client 11", ru: "Клиент 11" },
     youtubeId: "",
     thumbnail: "",
     quote: {
@@ -119,7 +119,7 @@ export const reviews = [
   },
   {
     id: 12,
-    name: "Client 12",
+    name: { en: "Client 12", ru: "Клиент 12" },
     youtubeId: "",
     thumbnail: "",
     quote: {
@@ -129,7 +129,7 @@ export const reviews = [
   },
   {
     id: 13,
-    name: "Client 13",
+    name: { en: "Client 13", ru: "Клиент 13" },
     youtubeId: "",
     thumbnail: "",
     quote: {
@@ -139,7 +139,7 @@ export const reviews = [
   },
   {
     id: 14,
-    name: "Client 14",
+    name: { en: "Client 14", ru: "Клиент 14" },
     youtubeId: "",
     thumbnail: "",
     quote: {
@@ -149,7 +149,7 @@ export const reviews = [
   },
   {
     id: 15,
-    name: "Client 15",
+    name: { en: "Client 15", ru: "Клиент 15" },
     youtubeId: "",
     thumbnail: "",
     quote: {
@@ -159,7 +159,7 @@ export const reviews = [
   },
   {
     id: 16,
-    name: "Client 16",
+    name: { en: "Client 16", ru: "Клиент 16" },
     youtubeId: "",
     thumbnail: "",
     quote: {

@@ -6,12 +6,11 @@ export default function Hero() {
   return (
     <section id="about" className="relative overflow-hidden bg-olive-800 text-cream scroll-mt-20">
       <div
-        className="pointer-events-none absolute inset-0 opacity-25"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 15% 20%, rgba(223,227,210,0.25), transparent 45%), radial-gradient(circle at 85% 75%, rgba(217,154,124,0.25), transparent 40%)",
-        }}
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url(/images/pexels-di-lai-567499892-19389843.jpg)" }}
       />
+      <div className="absolute inset-0 bg-olive-900/75" />
+
       <div className="relative mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:px-8 sm:py-20 md:grid-cols-[1.2fr_1fr] md:items-center md:py-28">
         <div>
           <h1 className="font-display text-3xl leading-tight font-medium sm:text-4xl md:text-5xl">
@@ -25,9 +24,11 @@ export default function Hero() {
         </div>
 
         <div className="justify-self-center md:justify-self-end">
-          <div className="aspect-[4/5] w-64 rounded-3xl bg-olive-600/60 shadow-xl ring-1 ring-cream/10 sm:w-80 md:w-full md:max-w-sm flex items-center justify-center">
-            <span className="px-6 text-center text-sm text-olive-100/70">{t.hero.imageAlt}</span>
-          </div>
+          <img
+            src="/images/2636689f44d23e4e1decc9cc9cc4d048.jpg"
+            alt={t.hero.imageAlt}
+            className="aspect-[4/5] w-64 rounded-3xl object-cover shadow-xl ring-1 ring-cream/10 sm:w-80 md:w-full md:max-w-sm"
+          />
         </div>
       </div>
     </section>

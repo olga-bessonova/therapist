@@ -87,7 +87,6 @@ export const ru = {
       {
         title: "Сеанс Рейки",
         prices: [{ amount: "$60", label: "30 мин" }],
-        cta: "Записаться",
       },
       {
         title: "Пакет из 4 сеансов Рейки",

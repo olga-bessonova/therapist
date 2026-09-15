@@ -86,8 +86,8 @@ export const en = {
     cards: [
       {
         title: "Reiki Session",
+        subtitle: "Consultation on your needs",
         prices: [{ amount: "$60", label: "30 min" }],
-        cta: "Get",
       },
       {
         title: "Package of 4 Reiki Sessions",
