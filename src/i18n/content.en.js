@@ -1,5 +1,10 @@
 export const en = {
   htmlLang: "en",
+  meta: {
+    title: "Chynara Baigazieva — Hypnotherapist & Reiki Master in NYC",
+    description:
+      "Internationally certified hypnotherapist and Reiki Master in New York. Resolve anxiety, insomnia, phobias, and inner blocks through hypnotherapy and Reiki — online and in person.",
+  },
   nav: {
     name: "Chynara",
     price: "Price",

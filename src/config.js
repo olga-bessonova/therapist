@@ -1,4 +1,5 @@
 // Central place for the few things you'll want to swap in yourself.
+export const SITE_URL = "https://chynarawellness.com";
 export const SITE_NAME = "Chynara Baigazieva";
 export const CALENDLY_URL = "https://calendly.com/chbai257/30min";
 export const ADDRESS = "219 A E89th Street, NY, NY 10128";

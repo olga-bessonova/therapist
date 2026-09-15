@@ -50,10 +50,10 @@ export default function Pricing() {
 
               <div className="mt-4 flex-1 space-y-1">
                 {card.prices.map((p, i) => (
-                  <p key={i} className="font-display text-xl font-medium text-ink">
-                    {p.amount}
+                  <p key={i} className="font-display flex items-baseline text-xl font-medium text-ink tabular-nums">
+                    <span className="min-w-16 shrink-0">{p.amount}</span>
                     {p.label && (
-                      <span className="ml-2 text-sm font-normal text-ink-soft"> — {p.label}</span>
+                      <span className="text-sm font-normal text-ink-soft">— {p.label}</span>
                     )}
                   </p>
                 ))}
