@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { Download } from "lucide-react";
 import { useLanguage } from "../i18n/LanguageContext";
 
 export default function Prep() {
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
@@ -23,6 +24,17 @@ export default function Prep() {
         <p className="mt-4 text-center text-sm leading-relaxed text-olive-100 sm:text-base">
           {t.prep.intro}
         </p>
+
+        <div className="mt-6 flex justify-center">
+          <a
+            href={`/before-session-${lang}.pdf`}
+            download
+            className="inline-flex items-center gap-2 rounded-full border border-cream/20 px-4 py-2 text-sm font-medium text-cream transition hover:bg-cream/10"
+          >
+            <Download className="h-4 w-4" />
+            {t.prep.download}
+          </a>
+        </div>
 
         <div className="mt-10 space-y-3">
           {t.prep.sections.map((section, i) => {

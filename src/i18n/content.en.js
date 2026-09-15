@@ -137,6 +137,7 @@ export const en = {
   },
   prep: {
     heading: "Before Our Session",
+    download: "Download instructions (PDF)",
     intro:
       "Please read carefully and prepare for our work together. Your preparation directly affects the depth of the process and the quality of your results.",
     sections: [
