@@ -14,6 +14,7 @@ export default function Nav() {
   const prepHref = isFaqPage ? `/${lang}#prep` : "#prep";
   const aboutHref = isFaqPage ? `/${lang}#about` : "#about";
   const reviewsHref = isFaqPage ? `/${lang}#reviews` : "#reviews";
+  const contactHref = isFaqPage ? `/${lang}#contact` : "#contact";
 
   return (
     <header className="sticky top-0 z-30 border-b border-olive-100 bg-cream/90 backdrop-blur">
@@ -35,6 +36,9 @@ export default function Nav() {
           <a href={reviewsHref} className="hover:text-ink">
             {t.nav.reviews}
           </a>
+          <a href={contactHref} className="hover:text-ink">
+            {t.nav.contact}
+          </a>
           <Link to={`/${lang}/faq`} className="hover:text-ink">
             {t.nav.faq}
           </Link>
@@ -46,7 +50,7 @@ export default function Nav() {
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-full bg-olive-800 px-4 py-2 text-sm font-medium text-cream transition hover:bg-olive-900 md:inline-block"
+            className="hidden rounded-full bg-clay px-4 py-2 text-sm font-medium text-olive-900 transition hover:bg-clay-light md:inline-block"
           >
             {t.nav.book}
           </a>
@@ -80,6 +84,13 @@ export default function Nav() {
           >
             {t.nav.reviews}
           </a>
+          <a
+            href={contactHref}
+            className="rounded-lg px-2 py-2 hover:bg-olive-100/50"
+            onClick={() => setMenuOpen(false)}
+          >
+            {t.nav.contact}
+          </a>
           <Link
             to={`/${lang}/faq`}
             className="rounded-lg px-2 py-2 hover:bg-olive-100/50"
@@ -91,7 +102,7 @@ export default function Nav() {
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-2 rounded-full bg-olive-800 px-4 py-2 text-center font-medium text-cream"
+            className="mt-2 rounded-full bg-clay px-4 py-2 text-center font-medium text-olive-900 transition hover:bg-clay-light"
           >
             {t.nav.book}
           </a>

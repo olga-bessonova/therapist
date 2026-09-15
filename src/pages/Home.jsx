@@ -5,6 +5,7 @@ import HelpGrid from "../components/HelpGrid";
 import Pricing from "../components/Pricing";
 import Prep from "../components/Prep";
 import Reviews from "../components/Reviews";
+import Contact from "../components/Contact";
 
 export default function Home() {
   const location = useLocation();
@@ -22,6 +23,7 @@ export default function Home() {
       <Pricing />
       <Prep />
       <Reviews />
+      <Contact />
     </>
   );
 }

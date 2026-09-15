@@ -6,6 +6,7 @@ export const en = {
     prep: "Before session",
     about: "About",
     reviews: "Reviews",
+    contact: "Contact",
     faq: "FAQ",
     book: "Book a free consultation",
   },
@@ -145,9 +146,9 @@ export const en = {
           "A quiet, private room where no one will disturb you for 1.5–2 hours",
           "All notifications, calls, and messengers turned off",
           "Let people at home know not to come in",
-          "Remove pets from the room 🙂",
+          "Remove pets from the room",
         ],
-        note: "Important: during the session there must be no risk of anyone entering or anything distracting you.",
+        note: "During the session there must be no risk of anyone entering or anything distracting you.",
       },
       {
         heading: "Body Position",
@@ -223,7 +224,7 @@ export const en = {
       {
         heading: "Important",
         intro:
-          "Hypnotherapy is not a show and not magic. It is deep inner work with your feelings, memories, and subconscious structures. Your results depend directly on:",
+          "Hypnotherapy is deep inner work with your feelings, memories, and subconscious structures. Your results depend directly on:",
         items: ["Your openness", "Your willingness to trust", "Your ability to let go of control"],
         note: "If you are ready to go deep — we will go deep.",
       },
@@ -232,6 +233,14 @@ export const en = {
   reviews: {
     heading: "What Clients Say",
     intro: "Real stories from people I've worked with.",
+  },
+  contact: {
+    telegram: "Telegram",
+    tiktok: "TikTok",
+    youtube: "YouTube",
+    phone: "Phone",
+    cta: "Ready to begin? Book a free consultation.",
+    book: "Book a free consultation",
   },
   faq: {
     heading: "Frequently Asked Questions",
@@ -333,9 +342,6 @@ export const en = {
     },
   },
   footer: {
-    tagline: "Internationally certified hypnotherapist and Reiki Master.",
-    cta: "Ready to begin? Book a free consultation.",
-    book: "Book a free consultation",
     rights: "All rights reserved.",
   },
 };

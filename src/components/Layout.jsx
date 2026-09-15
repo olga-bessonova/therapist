@@ -4,6 +4,7 @@ import { content, isValidLang, DEFAULT_LANG } from "../i18n";
 import { LanguageContext } from "../i18n/LanguageContext";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import FloatingBookButton from "./FloatingBookButton";
 
 export default function Layout() {
   const { lang } = useParams();
@@ -26,6 +27,7 @@ export default function Layout() {
           <Outlet />
         </main>
         <Footer />
+        <FloatingBookButton />
       </div>
     </LanguageContext.Provider>
   );

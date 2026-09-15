@@ -26,7 +26,16 @@ export default function Pricing() {
           ))}
         </div>
 
-        <div className="mx-auto mt-16 max-w-4xl border-t border-dashed border-olive-100" />
+        <div className="mt-16 flex justify-center">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-full bg-olive-900 px-8 py-4 text-base font-medium text-cream shadow-lg transition hover:scale-105 hover:bg-olive-800"
+          >
+            {t.nav.book}
+          </a>
+        </div>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {t.pricing.cards.map((card) => (
