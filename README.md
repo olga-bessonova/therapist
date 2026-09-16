@@ -1,16 +1,38 @@
-# React + Vite
+# Chynara Baigazieva — Hypnotherapy & Reiki
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Live site: [chynarawellness.com](https://chynarawellness.com)**
 
-Currently, two official plugins are available:
+A bilingual (EN/RU) marketing site for a hypnotherapist and Reiki practitioner: services and pricing, a pre-session prep guide with a downloadable PDF, video client reviews, and an FAQ page — with a Calendly link for booking.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech
 
-## React Compiler
+Front end only — no backend, no database. Everything is static, built with [Vite](https://vite.dev) and deployed to GitHub Pages via GitHub Actions.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **[React](https://react.dev) 19** + **[React Router](https://reactrouter.com) 7** for client-side routing
+- **[Tailwind CSS](https://tailwindcss.com) v4**
+- **[lucide-react](https://lucide.dev)** for icons
+- **[Playwright](https://playwright.dev)** (dev-only) to render the downloadable prep-guide PDFs — see `scripts/generate-pdfs.mjs`
 
-## Expanding the Oxlint configuration
+**4 pages**, one route pair per language:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+| | English | Russian |
+|---|---|---|
+| Home (hero, services, pricing, prep guide, reviews, contact) | `/en` | `/ru` |
+| FAQ | `/en/faq` | `/ru/faq` |
+
+## A few things worth pointing out
+
+- **Fully bilingual, no i18n library** — all copy lives in plain content objects (`src/i18n/content.en.js` / `content.ru.js`), swapped via a small language context. Every section, including the generated PDFs, pulls from the same source of truth.
+- **Downloadable PDF prep guide, generated from the site itself** — `scripts/generate-pdfs.mjs` renders the "Before Our Session" content through headless Chromium into styled, bilingual PDFs (`public/before-session-en.pdf` / `-ru.pdf`). Re-run it whenever the content changes.
+- **Video reviews carousel** with a lightweight lightbox — thumbnails only load the YouTube embed on click.
+- **A floating "Book a consultation" button** that reveals its label on hover and stays out of the way until you've scrolled.
+- **SPA deep-linking on GitHub Pages** — GitHub Pages has no server-side routing, so `public/404.html` + a small inline redirect script in `index.html` let direct links like `/en/faq` or `/en#prep` work even though it's a static host.
+
+## Development
+
+```bash
+npm install
+npm run dev       # start the dev server
+npm run build     # production build to dist/
+npm run preview   # preview the production build locally
+```
