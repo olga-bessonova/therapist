@@ -6,15 +6,15 @@ import VideoLightbox from "./VideoLightbox";
 
 const SCROLL_AMOUNT = 300;
 
-// Accepts a bare video ID or a full YouTube URL (youtu.be/ID, watch?v=ID, embed/ID).
+// Accepts a bare video ID or a full YouTube URL (youtu.be/ID, watch?v=ID, embed/ID, shorts/ID).
 function extractYoutubeId(value) {
   if (!value) return "";
   try {
     const url = new URL(value);
     if (url.hostname.includes("youtu.be")) return url.pathname.slice(1);
     if (url.searchParams.has("v")) return url.searchParams.get("v");
-    const embedMatch = url.pathname.match(/\/embed\/([\w-]+)/);
-    if (embedMatch) return embedMatch[1];
+    const pathMatch = url.pathname.match(/\/(?:embed|shorts)\/([\w-]+)/);
+    if (pathMatch) return pathMatch[1];
     return "";
   } catch {
     return value.trim();

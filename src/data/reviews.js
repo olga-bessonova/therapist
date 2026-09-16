@@ -19,6 +19,46 @@ export const reviews = [
   },
   {
     id: 2,
+    name: { en: "Lily", ru: "Лилия" },
+    youtubeId: "https://youtu.be/sU0WW40clAU",
+    thumbnail: "",
+    quote: {
+      en: "One deep hypnotherapy session with Chynara released my lifelong sugar/overeating habit — cravings for sweets are gone, sleep improved dramatically, and lasting calm set in. I highly recommend Chynara's gentle, professional work.",
+      ru: "Одна глубокая сессия гипнотерапии с Чынарой избавила меня от давней тяги к сладкому и перееданию, заметно улучшила сон и принесла устойчивое спокойствие. Я очень рекомендую Чынару как мягкого и профессионального специалиста.",
+    },
+  },
+  {
+    id: 3,
+    name: { en: "Mila", ru: "Мила" },
+    youtubeId: "https://www.youtube.com/watch?v=cswK11_waww",
+    thumbnail: "",
+    quote: {
+      en: "After multiple attempts with other therapists, one deep hypnotherapy session with Chynara brought my binge-eating struggle close to fully resolved. There's still a bit of work I need to do on my own to fully let it go.",
+      ru: "После множества попыток с другими терапевтами одна глубокая сессия гипнотерапии с Чынарой почти полностью решила мою проблему с перееданием. Осталось ещё немного поработать над этим самой, чтобы отпустить окончательно.",
+    },
+  },
+  {
+    id: 4,
+    name: { en: "Anastasia", ru: "Анастасия" },
+    youtubeId: "https://www.youtube.com/watch?v=gRojq1NMApM",
+    thumbnail: "",
+    quote: {
+      en: "Rooted in childhood trauma and deep distrust of people, social fears and panic eased through a uniquely gentle, love-filled hypnosis session with Chynara — a healing, almost sacred experience I wholeheartedly recommend to anyone carrying deep fear or difficulty trusting others.",
+      ru: "Сеанс с Чынарой, наполненный мягкостью и теплом, помог мне проработать глубокие социальные страхи и недоверие к людям, уходящие корнями в детство — этот почти сакральный, исцеляющий опыт. Я от всей души рекомендую тем, кто живёт с сильным напряжением и страхом довериться.",
+    },
+  },
+  {
+    id: 5,
+    name: { en: "Alla", ru: "Алла" },
+    youtubeId: "https://youtu.be/EeleAPOVtok",
+    thumbnail: "",
+    quote: {
+      en: "One session with Chynara erased my flight panic and left me calm even through a stressful customs search. I'm deeply grateful.",
+      ru: "Одна сессия с Чинарой сняла мою панику перед полётами и помогла остаться спокойной даже на стрессовом таможенном досмотре. Я благодарна за настоящие перемены.",
+    },
+  },
+  {
+    id: 6,
     name: { en: "Valeria", ru: "Валерия" },
     youtubeId: "https://youtu.be/mudoJLIUvUU",
     thumbnail: "",
@@ -28,143 +68,24 @@ export const reviews = [
     },
   },
   {
-    id: 3,
-    name: { en: "Mila", ru: "Мила" },
-    youtubeId: "https://www.youtube.com/watch?v=cswK11_waww",
-    thumbnail: "",
-    quote: {
-      en: "After multiple attempts with other therapists, one deep hypnotherapy session with Chynara brought her binge-eating struggle close to fully resolved — a powerful, moving experience she highly recommends, paired with her own continued effort.",
-      ru: "После множества попыток с другими терапевтами одна глубокая сессия гипнотерапии с Чинарой почти полностью решила её проблему с перееданием — мощный, трогательный опыт, который она горячо рекомендует, продолжая при этом работать над собой сама.",
-    },
-  },
-  {
-    id: 4,
-    name: { en: "Client 4", ru: "Клиент 4" },
-    youtubeId: "",
-    thumbnail: "",
-    quote: {
-      en: "My relationship with money shifted completely after our work together.",
-      ru: "Моё отношение к деньгам полностью изменилось после нашей работы.",
-    },
-  },
-  {
-    id: 5,
-    name: { en: "Client 5", ru: "Клиент 5" },
-    youtubeId: "",
-    thumbnail: "",
-    quote: {
-      en: "I found the confidence to finally launch my business.",
-      ru: "Я нашла уверенность, чтобы наконец запустить свой бизнес.",
-    },
-  },
-  {
-    id: 6,
-    name: { en: "Client 6", ru: "Клиент 6" },
-    youtubeId: "",
-    thumbnail: "",
-    quote: {
-      en: "The anxiety that controlled my days for years is simply gone.",
-      ru: "Тревожность, управлявшая моими днями годами, просто исчезла.",
-    },
-  },
-  {
     id: 7,
-    name: { en: "Client 7", ru: "Клиент 7" },
-    youtubeId: "",
+    name: { en: "Lady", ru: "Леди" },
+    youtubeId: "https://youtube.com/shorts/BlBaNNUv8kY",
     thumbnail: "",
     quote: {
-      en: "I left a relationship that no longer served me, without guilt.",
-      ru: "Я ушла из отношений, которые меня разрушали, без чувства вины.",
+      en: "A gentle, warm session with Chynara helped me find clarity and stability around my purpose and direction — I feel aligned, capable, and deeply grateful for such a caring hypnotherapist.",
+      ru: "Тёплая, мягкая сессия с Чинарой помогла мне обрести ясность и стабильность в вопросе моего предназначения и пути — я чувствую внутреннее согласие и глубокую благодарность такому заботливому гипнотерапевту.",
     },
   },
   {
     id: 8,
-    name: { en: "Client 8", ru: "Клиент 8" },
-    youtubeId: "",
+    name: { en: "Tatiana", ru: "Татьяна" },
+    youtubeId: "https://youtube.com/shorts/2LEyS2L-jjQ",
     thumbnail: "",
     quote: {
-      en: "I quit smoking after one session — I still can't believe it.",
-      ru: "Я бросила курить после одного сеанса — до сих пор не верится.",
+      en: "Working through a childhood feeling of injustice with Chynara instantly lifted a lifelong resentment — I feel lighter, more at ease, and far more accepting with the people close to me.",
+      ru: "Проработав с Чинарой детское чувство обиды и несправедливости, я сразу почувствовала лёгкость и гармонию — стало намного комфортнее и легче принимать близких мне людей.",
     },
   },
-  {
-    id: 9,
-    name: { en: "Client 9", ru: "Клиент 9" },
-    youtubeId: "",
-    thumbnail: "",
-    quote: {
-      en: "The chronic tension in my body finally released.",
-      ru: "Хроническое напряжение в теле наконец отпустило.",
-    },
-  },
-  {
-    id: 10,
-    name: { en: "Client 10", ru: "Клиент 10" },
-    youtubeId: "",
-    thumbnail: "",
-    quote: {
-      en: "I stopped doubting myself before every important meeting.",
-      ru: "Я перестала сомневаться в себе перед каждой важной встречей.",
-    },
-  },
-  {
-    id: 11,
-    name: { en: "Client 11", ru: "Клиент 11" },
-    youtubeId: "",
-    thumbnail: "",
-    quote: {
-      en: "Working with Chynara felt safe from the very first minute.",
-      ru: "С самой первой минуты работа с Чынарой ощущалась безопасной.",
-    },
-  },
-  {
-    id: 12,
-    name: { en: "Client 12", ru: "Клиент 12" },
-    youtubeId: "",
-    thumbnail: "",
-    quote: {
-      en: "I finally understand where my fear of public speaking came from — and it's gone.",
-      ru: "Я наконец поняла, откуда взялся страх публичных выступлений — и его больше нет.",
-    },
-  },
-  {
-    id: 13,
-    name: { en: "Client 13", ru: "Клиент 13" },
-    youtubeId: "",
-    thumbnail: "",
-    quote: {
-      en: "My income grew after we cleared my old beliefs about money.",
-      ru: "Мой доход вырос после того, как мы проработали старые убеждения о деньгах.",
-    },
-  },
-  {
-    id: 14,
-    name: { en: "Client 14", ru: "Клиент 14" },
-    youtubeId: "",
-    thumbnail: "",
-    quote: {
-      en: "I feel like myself again for the first time in years.",
-      ru: "Впервые за много лет я снова чувствую себя собой.",
-    },
-  },
-  {
-    id: 15,
-    name: { en: "Client 15", ru: "Клиент 15" },
-    youtubeId: "",
-    thumbnail: "",
-    quote: {
-      en: "The Reiki sessions gave me a calm I didn't know I was missing.",
-      ru: "Сеансы Рейки подарили мне спокойствие, которого мне так не хватало.",
-    },
-  },
-  {
-    id: 16,
-    name: { en: "Client 16", ru: "Клиент 16" },
-    youtubeId: "",
-    thumbnail: "",
-    quote: {
-      en: "I recommend this to anyone who feels stuck and doesn't know why.",
-      ru: "Рекомендую всем, кто чувствует, что застрял, и не понимает почему.",
-    },
-  },
+  
 ];

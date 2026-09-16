@@ -65,7 +65,7 @@ export default function Nav() {
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-full bg-clay px-4 py-2 text-sm font-medium text-olive-900 transition hover:bg-clay-light md:inline-block"
+            className="hidden rounded-full bg-clay px-4 py-2 text-center text-sm font-medium text-olive-900 transition hover:bg-clay-light md:inline-block"
           >
             {t.nav.book}
           </a>
