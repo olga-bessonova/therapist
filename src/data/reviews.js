@@ -29,12 +29,12 @@ export const reviews = [
   },
   {
     id: 3,
-    name: { en: "Client 3", ru: "Клиент 3" },
-    youtubeId: "",
+    name: { en: "Mila", ru: "Мила" },
+    youtubeId: "https://www.youtube.com/watch?v=cswK11_waww",
     thumbnail: "",
     quote: {
-      en: "I stopped panicking before flights — something I didn't think was possible.",
-      ru: "Я перестала паниковать перед перелётами — не верила, что это возможно.",
+      en: "After multiple attempts with other therapists, one deep hypnotherapy session with Chynara brought her binge-eating struggle close to fully resolved — a powerful, moving experience she highly recommends, paired with her own continued effort.",
+      ru: "После множества попыток с другими терапевтами одна глубокая сессия гипнотерапии с Чинарой почти полностью решила её проблему с перееданием — мощный, трогательный опыт, который она горячо рекомендует, продолжая при этом работать над собой сама.",
     },
   },
   {

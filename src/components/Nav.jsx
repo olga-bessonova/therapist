@@ -18,8 +18,12 @@ export default function Nav() {
 
   return (
     <header className="sticky top-0 z-30 border-b border-olive-100 bg-cream/90 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 sm:px-8">
-        <Link to={`/${lang}`} className="font-display text-lg font-medium text-ink shrink-0">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-4 sm:gap-4 sm:px-8">
+        <Link
+          to={`/${lang}`}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="font-display text-lg font-medium text-ink shrink-0"
+        >
           {t.nav.name}
         </Link>
 
@@ -44,7 +48,18 @@ export default function Nav() {
           </Link>
         </nav>
 
-        <div className="flex items-center gap-3 sm:gap-4">
+        <div className="flex flex-1 justify-center md:hidden">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-clay px-2.5 py-1.5 text-xs font-medium whitespace-nowrap text-olive-900 transition hover:bg-clay-light"
+          >
+            {t.nav.bookShort}
+          </a>
+        </div>
+
+        <div className="flex items-center gap-2 sm:gap-4">
           <LangSwitch lang={lang} />
           <a
             href={CALENDLY_URL}

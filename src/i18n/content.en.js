@@ -14,6 +14,7 @@ export const en = {
     contact: "Contact",
     faq: "FAQ",
     book: "Book a free consultation",
+    bookShort: "Free Consultation",
   },
   hero: {
     eyebrow: "Internationally certified hypnotherapist and Reiki Master.",
