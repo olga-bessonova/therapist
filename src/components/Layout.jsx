@@ -46,6 +46,7 @@ export default function Layout() {
 
     document.title = title;
     upsertMeta("name", "description", description);
+    upsertMeta("name", "keywords", t.meta.keywords);
     upsertMeta("property", "og:type", "website");
     upsertMeta("property", "og:site_name", t.nav.name);
     upsertMeta("property", "og:title", title);

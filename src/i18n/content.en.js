@@ -3,7 +3,9 @@ export const en = {
   meta: {
     title: "Chynara Baigazieva — Hypnotherapist & Reiki Master in NYC",
     description:
-      "Internationally certified hypnotherapist and Reiki Master in New York. Resolve anxiety, insomnia, phobias, and inner blocks through hypnotherapy and Reiki — online and in person.",
+      "Internationally certified hypnotherapist, Reiki Master, and therapist serving Brooklyn and New York City. Resolve anxiety, insomnia, phobias, and inner blocks through hypnotherapy and Reiki — online and in person.",
+    keywords:
+      "hypnotherapist, therapist, Reiki master, Brooklyn, New York City, NYC, hypnotherapy, anxiety therapy, Reiki healing",
   },
   nav: {
     name: "Chynara",
