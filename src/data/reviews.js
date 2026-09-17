@@ -19,13 +19,14 @@ export const reviews = [
   },
   {
     id: 2,
-    name: { en: "Lily", ru: "Лилия" },
-    youtubeId: "https://youtu.be/sU0WW40clAU",
+    name: { en: "Eugene", ru: "Евгений" },
+    youtubeId: "https://youtube.com/shorts/Kkof63Knj1k",
     thumbnail: "",
     quote: {
-      en: "One deep hypnotherapy session with Chynara released my lifelong sugar/overeating habit — cravings for sweets are gone, sleep improved dramatically, and lasting calm set in. I highly recommend Chynara's gentle, professional work.",
-      ru: "Одна глубокая сессия гипнотерапии с Чынарой избавила меня от давней тяги к сладкому и перееданию, заметно улучшила сон и принесла устойчивое спокойствие. Я очень рекомендую Чынару как мягкого и профессионального специалиста.",
+      en: "Working through childhood roots of my self-doubt with Chynara was gentle, even tender — I feel far more confident in myself and with people now.",
+      ru: "Проработка с Чинарой детских корней моей неуверенности прошла невероятно мягко и нежно — теперь я чувствую себя намного увереннее в себе и в общении с людьми.",
     },
+    
   },
   {
     id: 3,
@@ -59,22 +60,22 @@ export const reviews = [
   },
   {
     id: 6,
+    name: { en: "Alex", ru: "Алекс" },
+    youtubeId: "https://youtube.com/shorts/h7kkqIeygn8",
+    thumbnail: "",
+    quote: {
+      en: "Working through my rescuer trigger with Chynara has left me noticeably calmer — I no longer feel compelled to jump in and save everyone, and the self-blame when I don't is gone.",
+      ru: "Проработав с Чынарой свой триггер спасателя, я стал заметно спокойнее — больше не чувствую потребности бежать всех выручать и не корю себя, если не помогаю.",
+    },    
+  },
+  {
+    id: 7,
     name: { en: "Valeria", ru: "Валерия" },
     youtubeId: "https://youtu.be/mudoJLIUvUU",
     thumbnail: "",
     quote: {
       en: "Chynara helped me uncover the fear behind my constant clumsiness around light clothes through a regression session, and a week later I've worn white without a single mishap and felt truly calm doing it.",
       ru: "Чинара помогла мне через регрессию найти корень моего вечного неуклюжества со светлой одеждой, и через неделю я спокойно хожу в белом без единой неприятности.",
-    },
-  },
-  {
-    id: 7,
-    name: { en: "Lady", ru: "Леди" },
-    youtubeId: "https://youtube.com/shorts/BlBaNNUv8kY",
-    thumbnail: "",
-    quote: {
-      en: "A gentle, warm session with Chynara helped me find clarity and stability around my purpose and direction — I feel aligned, capable, and deeply grateful for such a caring hypnotherapist.",
-      ru: "Тёплая, мягкая сессия с Чинарой помогла мне обрести ясность и стабильность в вопросе моего предназначения и пути — я чувствую внутреннее согласие и глубокую благодарность такому заботливому гипнотерапевту.",
     },
   },
   {
@@ -85,6 +86,29 @@ export const reviews = [
     quote: {
       en: "Working through a childhood feeling of injustice with Chynara instantly lifted a lifelong resentment — I feel lighter, more at ease, and far more accepting with the people close to me.",
       ru: "Проработав с Чинарой детское чувство обиды и несправедливости, я сразу почувствовала лёгкость и гармонию — стало намного комфортнее и легче принимать близких мне людей.",
+    },
+  },
+
+  {
+    id: 9,
+    name: { en: "Lady", ru: "Леди" },
+    youtubeId: "https://youtube.com/shorts/BlBaNNUv8kY",
+    thumbnail: "",
+    quote: {
+      en: "A gentle, warm session with Chynara helped me find clarity and stability around my purpose and direction — I feel aligned, capable, and deeply grateful for such a caring hypnotherapist.",
+      ru: "Тёплая, мягкая сессия с Чинарой помогла мне обрести ясность и стабильность в вопросе моего предназначения и пути — я чувствую внутреннее согласие и глубокую благодарность такому заботливому гипнотерапевту.",
+    },
+    
+  },
+
+  {
+    id: 10,
+    name: { en: "Lily", ru: "Лилия" },
+    youtubeId: "https://youtu.be/sU0WW40clAU",
+    thumbnail: "",
+    quote: {
+      en: "One deep hypnotherapy session with Chynara released my lifelong sugar/overeating habit — cravings for sweets are gone, sleep improved dramatically, and lasting calm set in. I highly recommend Chynara's gentle, professional work.",
+      ru: "Одна глубокая сессия гипнотерапии с Чынарой избавила меня от давней тяги к сладкому и перееданию, заметно улучшила сон и принесла устойчивое спокойствие. Я очень рекомендую Чынару как мягкого и профессионального специалиста.",
     },
   },
   
