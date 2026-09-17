@@ -2,7 +2,7 @@
 
 **Live site: [chynarawellness.com](https://chynarawellness.com)**
 
-A bilingual (EN/RU) marketing site for a hypnotherapist and Reiki practitioner: services and pricing, a pre-session prep guide with a downloadable PDF, video client reviews, and an FAQ page — with a Calendly link for booking.
+A bilingual (EN/RU) marketing site for a certified hypnotist and Reiki practitioner: services and pricing, a pre-session prep guide with a downloadable PDF, video client reviews, and an FAQ page — with a Calendly link for booking.
 
 ## Tech
 
