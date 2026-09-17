@@ -8,5 +8,5 @@ export const PHONE_HREF = "+16463537181";
 
 export const TELEGRAM_URL = "https://t.me/Chynara_B";
 // Placeholders — swap in the real profile URLs.
-export const TIKTOK_URL = "https://www.tiktok.com/@chynara_b";
+export const TIKTOK_URL = "https://www.tiktok.com/@hypnotherapist_reikimast";
 export const YOUTUBE_URL = "https://www.youtube.com/@Chynara-Baigazieva";
