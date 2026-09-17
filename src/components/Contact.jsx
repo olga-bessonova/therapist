@@ -1,13 +1,13 @@
 import { Phone } from "lucide-react";
 import { useLanguage } from "../i18n/LanguageContext";
-import { TelegramIcon, TikTokIcon, YouTubeIcon } from "./BrandIcons";
+import { TelegramIcon, WhatsAppIcon, YouTubeIcon } from "./BrandIcons";
 import {
   ADDRESS,
   CALENDLY_URL,
   PHONE,
   PHONE_HREF,
   TELEGRAM_URL,
-  TIKTOK_URL,
+  WHATSAPP_URL,
   YOUTUBE_URL,
 } from "../config";
 
@@ -40,13 +40,13 @@ export default function Contact() {
           <Divider />
 
           <a
-            href={TIKTOK_URL}
+            href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={t.contact.tiktok}
+            aria-label={t.contact.whatsapp}
             className="hover:text-cream"
           >
-            <TikTokIcon className="h-5 w-5" />
+            <WhatsAppIcon className="h-5 w-5" />
           </a>
 
           <Divider />

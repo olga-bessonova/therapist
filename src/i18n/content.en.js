@@ -1,11 +1,11 @@
 export const en = {
   htmlLang: "en",
   meta: {
-    title: "Chynara Baigazieva — Hypnotherapist & Reiki Master in NYC",
+    title: "Chynara — Certified Hypnotist & Reiki Master in NYC",
     description:
-      "Internationally certified hypnotherapist, Reiki Master, and therapist serving Brooklyn and New York City. Resolve anxiety, insomnia, phobias, and inner blocks through hypnotherapy and Reiki — online and in person.",
+      "Internationally certified hypnotist, Reiki Master, and therapist serving Brooklyn and New York City. Resolve anxiety, insomnia, phobias, and inner blocks through hypnotherapy and Reiki — online and in person.",
     keywords:
-      "hypnotherapist, therapist, Reiki master, Brooklyn, New York City, NYC, hypnotherapy, anxiety therapy, Reiki healing",
+      "certified hypnotist, therapist, Reiki master, Brooklyn, New York City, NYC, hypnotherapy, anxiety therapy, Reiki healing",
   },
   nav: {
     name: "Chynara",
@@ -19,7 +19,7 @@ export const en = {
     bookShort: "Free Consultation",
   },
   hero: {
-    eyebrow: "Internationally certified hypnotherapist and Reiki Master.",
+    eyebrow: "Internationally certified hypnotist and Reiki Master.",
     paragraphs: [
       "With over 80 certificates from world-renowned Reiki masters and years of hands-on experience, I specialize in resolving deep inner conflicts, psychological blocks, and energetic blockages that hold you back.",
       "Hypnotherapy and Reiki are powerful, evidence-based, and gentle tools for working with the subconscious mind and energy body. Together, we will find the root of your problem, and release it for good.",
@@ -243,9 +243,16 @@ export const en = {
     heading: "What Clients Say",
     intro: "Real stories from people I've worked with.",
   },
+  terms: {
+    heading: "Important Client Information & Booking Terms",
+    paragraphs: [
+      "Thank you for choosing to partner with me on your wellness and personal development journey. To ensure complete clarity before you schedule, please note that all sessions focus strictly on non-therapeutic hypnotism to encourage positive thinking and build your self-hypnosis skills, alongside Reiki services to support relaxation and stress reduction.",
+      "These offerings are purely educational, motivational, and complementary in nature. They are not represented as any form of medical, behavioral, or mental health care, and by law, no health benefit claims are made for these services. By booking a session, you acknowledge and agree that these sessions do not replace professional medical or psychological treatment.",
+    ],
+  },
   contact: {
     telegram: "Telegram",
-    tiktok: "TikTok",
+    whatsapp: "WhatsApp",
     youtube: "YouTube",
     phone: "Phone",
     cta: "Ready to begin? Book a free consultation.",
@@ -266,7 +273,7 @@ export const en = {
         items: [
           {
             q: "Who conducts the sessions?",
-            a: "All sessions are conducted personally by me — an internationally certified hypnotherapist and Reiki Master with over 80 certificates from world-renowned masters and years of hands-on practice.",
+            a: "All sessions are conducted personally by me — an internationally certified hypnotist and Reiki Master with over 80 certificates from world-renowned masters and years of hands-on practice.",
           },
           {
             q: "Why combine hypnotherapy and Reiki?",
@@ -352,5 +359,6 @@ export const en = {
   },
   footer: {
     rights: "All rights reserved.",
+    developedBy: "Developed by",
   },
 };

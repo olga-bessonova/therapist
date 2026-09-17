@@ -29,14 +29,14 @@ const LANGS = [
   {
     code: "en",
     dict: en,
-    subtitle: "Internationally certified hypnotherapist and Reiki Master",
+    subtitle: "Internationally certified hypnotist and Reiki Master",
     cover: "A short guide to help you arrive ready — in body, space, and mind.",
     footerName: SITE_NAME,
   },
   {
     code: "ru",
     dict: ru,
-    subtitle: "Международно сертифицированный гипнотерапевт и Мастер Рейки",
+    subtitle: "Международно сертифицированный гипнотизёр и Мастер Рейки",
     cover: "Короткое руководство, которое поможет вам прийти на сеанс готовыми — телом, пространством и разумом.",
     footerName: SITE_NAME,
   },

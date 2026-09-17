@@ -13,8 +13,8 @@ export const reviews = [
     youtubeId: "https://youtu.be/-ww-aZQmx1w",
     thumbnail: "",
     quote: {
-      en: "Chynara responded to my request within minutes and, through one warm, easy session, helped me uncover and release the difficulty I'd been stuck on after a hard client experience — I recommend her as a skilled, wonderfully easy-to-talk-to hypnotherapist.",
-      ru: "Чинара откликнулась на мой запрос за считанные минуты и за одну лёгкую, тёплую сессию помогла мне найти и снять тяжесть, застрявшую после сложного случая с клиентом — рекомендую её как отличного гипнотерапевта, с которой невероятно легко и приятно общаться.",
+      en: "Chynara responded to my request within minutes and, through one warm, easy session, helped me uncover and release the difficulty I'd been stuck on after a hard client experience — I recommend her as a skilled, wonderfully easy-to-talk-to hypnotist.",
+      ru: "Чынара откликнулась на мой запрос за считанные минуты и за одну лёгкую, тёплую сессию помогла мне найти и снять тяжесть, застрявшую после сложного случая с клиентом — рекомендую её как отличного гипнотизёра, с которой невероятно легко и приятно общаться.",
     },
   },
   {
@@ -24,7 +24,7 @@ export const reviews = [
     thumbnail: "",
     quote: {
       en: "Working through childhood roots of my self-doubt with Chynara was gentle, even tender — I feel far more confident in myself and with people now.",
-      ru: "Проработка с Чинарой детских корней моей неуверенности прошла невероятно мягко и нежно — теперь я чувствую себя намного увереннее в себе и в общении с людьми.",
+      ru: "Проработка с Чынарой детских корней моей неуверенности прошла невероятно мягко и нежно — теперь я чувствую себя намного увереннее в себе и в общении с людьми.",
     },
     
   },
@@ -55,7 +55,7 @@ export const reviews = [
     thumbnail: "",
     quote: {
       en: "One session with Chynara erased my flight panic and left me calm even through a stressful customs search. I'm deeply grateful.",
-      ru: "Одна сессия с Чинарой сняла мою панику перед полётами и помогла остаться спокойной даже на стрессовом таможенном досмотре. Я благодарна за настоящие перемены.",
+      ru: "Одна сессия с Чынарой сняла мою панику перед полётами и помогла остаться спокойной даже на стрессовом таможенном досмотре. Я благодарна за настоящие перемены.",
     },
   },
   {
@@ -75,7 +75,7 @@ export const reviews = [
     thumbnail: "",
     quote: {
       en: "Chynara helped me uncover the fear behind my constant clumsiness around light clothes through a regression session, and a week later I've worn white without a single mishap and felt truly calm doing it.",
-      ru: "Чинара помогла мне через регрессию найти корень моего вечного неуклюжества со светлой одеждой, и через неделю я спокойно хожу в белом без единой неприятности.",
+      ru: "Чынара помогла мне через регрессию найти корень моего вечного неуклюжества со светлой одеждой, и через неделю я спокойно хожу в белом без единой неприятности.",
     },
   },
   {
@@ -85,7 +85,7 @@ export const reviews = [
     thumbnail: "",
     quote: {
       en: "Working through a childhood feeling of injustice with Chynara instantly lifted a lifelong resentment — I feel lighter, more at ease, and far more accepting with the people close to me.",
-      ru: "Проработав с Чинарой детское чувство обиды и несправедливости, я сразу почувствовала лёгкость и гармонию — стало намного комфортнее и легче принимать близких мне людей.",
+      ru: "Проработав с Чынарой детское чувство обиды и несправедливости, я сразу почувствовала лёгкость и гармонию — стало намного комфортнее и легче принимать близких мне людей.",
     },
   },
 
@@ -95,8 +95,8 @@ export const reviews = [
     youtubeId: "https://youtube.com/shorts/BlBaNNUv8kY",
     thumbnail: "",
     quote: {
-      en: "A gentle, warm session with Chynara helped me find clarity and stability around my purpose and direction — I feel aligned, capable, and deeply grateful for such a caring hypnotherapist.",
-      ru: "Тёплая, мягкая сессия с Чинарой помогла мне обрести ясность и стабильность в вопросе моего предназначения и пути — я чувствую внутреннее согласие и глубокую благодарность такому заботливому гипнотерапевту.",
+      en: "A gentle, warm session with Chynara helped me find clarity and stability around my purpose and direction — I feel aligned, capable, and deeply grateful for such a caring hypnotist.",
+      ru: "Тёплая, мягкая сессия с Чынарой помогла мне обрести ясность и стабильность в вопросе моего предназначения и пути — я чувствую внутреннее согласие и глубокую благодарность такому заботливому гипнотизёру.",
     },
     
   },

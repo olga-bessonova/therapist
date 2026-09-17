@@ -1,5 +1,6 @@
 import { useLanguage } from "../i18n/LanguageContext";
 import { CALENDLY_URL } from "../config";
+import Terms from "./Terms";
 
 export default function Pricing() {
   const { t } = useLanguage();
@@ -36,6 +37,8 @@ export default function Pricing() {
             {t.nav.book}
           </a>
         </div>
+
+        <Terms />
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {t.pricing.cards.map((card) => (

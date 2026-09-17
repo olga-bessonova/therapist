@@ -1,4 +1,4 @@
-# Chynara Baigazieva — Hypnotherapy & Reiki
+# Chynara — Hypnotherapy & Reiki
 
 **Live site: [chynarawellness.com](https://chynarawellness.com)**
 
