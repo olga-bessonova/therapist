@@ -33,3 +33,9 @@ body {
 .font-display {
   font-family: var(--font-display);
 }
+
+/* Fraunces has no Cyrillic glyphs, so Russian headings need their own web font
+   instead of relying on whatever fallback the visitor's system happens to have. */
+:lang(ru) .font-display {
+  font-family: "Lora", "Times New Roman", Georgia, serif;
+}
