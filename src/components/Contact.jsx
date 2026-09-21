@@ -3,7 +3,7 @@ import { useLanguage } from "../i18n/LanguageContext";
 import { TelegramIcon, WhatsAppIcon, YouTubeIcon } from "./BrandIcons";
 import {
   ADDRESS,
-  CALENDLY_URL,
+  CALENDLY_URLS,
   PHONE,
   PHONE_HREF,
   TELEGRAM_URL,
@@ -12,14 +12,14 @@ import {
 } from "../config";
 
 export default function Contact() {
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
 
   return (
     <section id="contact" className="scroll-mt-20 bg-olive-900 pt-16 text-cream sm:pt-20">
       <div className="mx-auto max-w-3xl px-5 text-center sm:px-8">
         <h2 className="font-display text-xl font-medium sm:text-2xl">{t.contact.cta}</h2>
         <a
-          href={CALENDLY_URL}
+          href={CALENDLY_URLS[lang]}
           target="_blank"
           rel="noopener noreferrer"
           className="mt-6 inline-block rounded-full bg-clay px-6 py-3 text-sm font-medium text-olive-900 transition hover:bg-clay-light"

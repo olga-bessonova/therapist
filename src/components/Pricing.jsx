@@ -1,9 +1,9 @@
 import { useLanguage } from "../i18n/LanguageContext";
-import { CALENDLY_URL } from "../config";
+import { CALENDLY_URLS } from "../config";
 import Terms from "./Terms";
 
 export default function Pricing() {
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
 
   return (
     <section id="pricing" className="relative scroll-mt-20 overflow-hidden bg-cream py-16 sm:py-24">
@@ -29,7 +29,7 @@ export default function Pricing() {
 
         <div className="mt-16 flex justify-center">
           <a
-            href={CALENDLY_URL}
+            href={CALENDLY_URLS[lang]}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block rounded-full bg-olive-900 px-8 py-4 text-base font-medium text-cream shadow-lg transition hover:scale-105 hover:bg-olive-800"

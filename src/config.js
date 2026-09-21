@@ -1,7 +1,10 @@
 // Central place for the few things you'll want to swap in yourself.
 export const SITE_URL = "https://chynarawellness.com";
 export const SITE_NAME = "Chynara";
-export const CALENDLY_URL = "https://calendly.com/chbai257/30min";
+export const CALENDLY_URLS = {
+  en: "https://calendly.com/chbai257/30min",
+  ru: "https://calendly.com/chbai257/meet-with-me",
+};
 export const ADDRESS = "New York";
 export const PHONE = "646-353-7181";
 export const PHONE_HREF = "+16463537181";

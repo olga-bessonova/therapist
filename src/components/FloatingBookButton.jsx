@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "../i18n/LanguageContext";
-import { CALENDLY_URL } from "../config";
+import { CALENDLY_URLS } from "../config";
 
 export default function FloatingBookButton() {
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ export default function FloatingBookButton() {
 
   return (
     <a
-      href={CALENDLY_URL}
+      href={CALENDLY_URLS[lang]}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={t.nav.book}

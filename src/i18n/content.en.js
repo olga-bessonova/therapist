@@ -3,9 +3,9 @@ export const en = {
   meta: {
     title: "Chynara — Certified Hypnotist & Reiki Master in NYC",
     description:
-      "Internationally certified hypnotist, Reiki Master, and therapist serving Brooklyn and New York City. Resolve anxiety, insomnia, phobias, and inner blocks through hypnotherapy and Reiki — online and in person.",
+      "Internationally certified hypnotist, Reiki Master, and therapist serving Brooklyn and New York City. Resolve anxiety, insomnia, phobias, and inner blocks through hypnosis and Reiki — online and in person.",
     keywords:
-      "certified hypnotist, therapist, Reiki master, Brooklyn, New York City, NYC, hypnotherapy, anxiety therapy, Reiki healing",
+      "certified hypnotist, therapist, Reiki master, Brooklyn, New York City, NYC, hypnosis, anxiety therapy, Reiki healing",
   },
   nav: {
     name: "Chynara",
@@ -22,7 +22,7 @@ export const en = {
     eyebrow: "Internationally certified hypnotist and Reiki Master.",
     paragraphs: [
       "With over 80 certificates from world-renowned Reiki masters and years of hands-on experience, I specialize in resolving deep inner conflicts, psychological blocks, and energetic blockages that hold you back.",
-      "Hypnotherapy and Reiki are powerful, evidence-based, and gentle tools for working with the subconscious mind and energy body. Together, we will find the root of your problem, and release it for good.",
+      "Hypnosis and Reiki are powerful, evidence-based, and gentle tools for working with the subconscious mind and energy body. Together, we will find the root of your problem, and release it for good.",
     ],
     imageAlt: "Reiki session in progress",
   },
@@ -37,7 +37,7 @@ export const en = {
       {
         icon: "wind",
         title: "Anxiety and Panic Attacks",
-        text: "Freedom from constant worry and fear of heights, flying, public speaking, etc. through Reiki and hypnotherapy sessions.",
+        text: "Freedom from constant worry and fear of heights, flying, public speaking, etc. through Reiki and hypnosis sessions.",
       },
       {
         icon: "smile",
@@ -84,12 +84,12 @@ export const en = {
         text: "Reiki session — restoring energetic balance, relieving stress, activating self-healing. Online and in person.",
       },
       {
-        title: "Hypnotherapy",
-        text: "Hypnotherapy — working with the subconscious to remove blocks, fears, bad habits, and psychosomatic issues. Online and in person.",
+        title: "Hypnosis",
+        text: "Hypnosis — working with the subconscious to remove blocks, fears, bad habits, and psychosomatic issues. Online and in person.",
       },
       {
         title: "Reiki + Hypnosis",
-        text: "Reiki + Hypnotherapy — a combined approach: we shift your mindset and restore your energy at the same time. The most requested format.",
+        text: "Reiki + Hypnosis — a combined approach: we shift your mindset and restore your energy at the same time. The most requested format.",
       },
     ],
     cards: [
@@ -115,30 +115,30 @@ export const en = {
         ],
       },
       {
-        title: "Package of 3 Hypnotherapy Sessions",
+        title: "Package of 3 Hypnosis Sessions",
         subtitle: "Basic transformation programs",
         prices: [{ amount: "$750", label: "" }],
       },
       {
-        title: "Package of 6 Hypnotherapy Sessions",
+        title: "Package of 6 Hypnosis Sessions",
         subtitle: "Intensive transformation programs",
         prices: [{ amount: "$1200", label: "" }],
       },
       {
-        title: "Package of 8 Hypnotherapy Sessions",
+        title: "Package of 8 Hypnosis Sessions",
         subtitle: "For deep-seated trauma or chronic issues",
         prices: [{ amount: "$1400", label: "" }],
       },
       {
-        title: "Package of 3 Reiki + Hypnotherapy Sessions",
+        title: "Package of 3 Reiki + Hypnosis Sessions",
         prices: [{ amount: "$900", label: "" }],
       },
       {
-        title: "Package of 6 Reiki + Hypnotherapy Sessions",
+        title: "Package of 6 Reiki + Hypnosis Sessions",
         prices: [{ amount: "$1500", label: "" }],
       },
       {
-        title: "Package of 8 Reiki + Hypnotherapy Sessions",
+        title: "Package of 8 Reiki + Hypnosis Sessions",
         prices: [{ amount: "$2000", label: "" }],
       },
     ],
@@ -208,7 +208,7 @@ export const en = {
           "You are ready to feel",
           "You are ready to go deep",
         ],
-        note: 'The key is trust in the process. Hypnotherapy works with the unconscious mind. The less you try to control, analyze, or "help yourself with your head" — the deeper the result. When control kicks in, the process slows down. When you allow — the process opens up.',
+        note: 'The key is trust in the process. Hypnosis works with the unconscious mind. The less you try to control, analyze, or "help yourself with your head" — the deeper the result. When control kicks in, the process slows down. When you allow — the process opens up.',
       },
       {
         heading: "During the Session",
@@ -233,7 +233,7 @@ export const en = {
       {
         heading: "Important",
         intro:
-          "Hypnotherapy is deep inner work with your feelings, memories, and subconscious structures. Your results depend directly on:",
+          "Hypnosis is deep inner work with your feelings, memories, and subconscious structures. Your results depend directly on:",
         items: ["Your openness", "Your willingness to trust", "Your ability to let go of control"],
         note: "If you are ready to go deep — we will go deep.",
       },
@@ -262,9 +262,9 @@ export const en = {
     heading: "Frequently Asked Questions",
     tabs: [
       { key: "essentials", label: "Essentials" },
-      { key: "hypnotherapy", label: "Hypnotherapy" },
+      { key: "hypnosis", label: "Hypnosis" },
       { key: "reiki", label: "Reiki" },
-      { key: "combined", label: "Reiki + Hypnotherapy" },
+      { key: "combined", label: "Reiki + Hypnosis" },
     ],
     tabContent: {
       essentials: {
@@ -276,8 +276,8 @@ export const en = {
             a: "All sessions are conducted personally by me — an internationally certified hypnotist and Reiki Master with over 80 certificates from world-renowned masters and years of hands-on practice.",
           },
           {
-            q: "Why combine hypnotherapy and Reiki?",
-            a: "It's a powerful synergistic approach: hypnotherapy works with the mind, while Reiki works with the energy body.",
+            q: "Why combine hypnosis and Reiki?",
+            a: "It's a powerful synergistic approach: hypnosis works with the mind, while Reiki works with the energy body.",
           },
           {
             q: "How do these practices affect income and success?",
@@ -289,13 +289,13 @@ export const en = {
           },
         ],
       },
-      hypnotherapy: {
-        heading: "Hypnotherapy & the Subconscious",
+      hypnosis: {
+        heading: "Hypnosis & the Subconscious",
         subheading: "A path to lasting change through the power of your subconscious mind.",
         items: [
           {
-            q: "What is hypnotherapy?",
-            a: "Hypnotherapy is a guided, deeply relaxed state in which the conscious, critical mind steps aside so we can work directly with the subconscious — where habits, fears, and old patterns are actually stored.",
+            q: "What is hypnosis?",
+            a: "Hypnosis is a guided, deeply relaxed state in which the conscious, critical mind steps aside so we can work directly with the subconscious — where habits, fears, and old patterns are actually stored.",
           },
           {
             q: "Will I be in control during hypnosis?",
@@ -307,7 +307,7 @@ export const en = {
           },
           {
             q: "Is it safe?",
-            a: "Yes. Hypnotherapy is a gentle, evidence-based method. I'll always explain what to expect beforehand, and we work at a pace that feels safe for you.",
+            a: "Yes. Hypnosis is a gentle, evidence-based method. I'll always explain what to expect beforehand, and we work at a pace that feels safe for you.",
           },
           {
             q: "How many sessions will I need?",
@@ -338,12 +338,12 @@ export const en = {
         ],
       },
       combined: {
-        heading: "Reiki + Hypnotherapy",
+        heading: "Reiki + Hypnosis",
         subheading: "Working with both the mind and the energy body at once.",
         items: [
           {
-            q: "What happens in a combined Reiki + Hypnotherapy session?",
-            a: "We begin with hypnotherapy to work directly with the subconscious mind, then move into Reiki to restore energetic balance and let the changes settle in the body.",
+            q: "What happens in a combined Reiki + Hypnosis session?",
+            a: "We begin with hypnosis to work directly with the subconscious mind, then move into Reiki to restore energetic balance and let the changes settle in the body.",
           },
           {
             q: "Who is this format best for?",

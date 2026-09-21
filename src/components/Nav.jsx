@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "../i18n/LanguageContext";
-import { CALENDLY_URL } from "../config";
+import { CALENDLY_URLS } from "../config";
 
 export default function Nav() {
   const { lang, t } = useLanguage();
@@ -50,7 +50,7 @@ export default function Nav() {
 
         <div className="flex flex-1 justify-center md:hidden">
           <a
-            href={CALENDLY_URL}
+            href={CALENDLY_URLS[lang]}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-clay px-2.5 py-1.5 text-xs font-medium whitespace-nowrap text-olive-900 transition hover:bg-clay-light"
@@ -62,7 +62,7 @@ export default function Nav() {
         <div className="flex items-center gap-2 sm:gap-4">
           <LangSwitch lang={lang} />
           <a
-            href={CALENDLY_URL}
+            href={CALENDLY_URLS[lang]}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden rounded-full bg-clay px-4 py-2 text-center text-sm font-medium text-olive-900 transition hover:bg-clay-light md:inline-block"
@@ -114,7 +114,7 @@ export default function Nav() {
             {t.nav.faq}
           </Link>
           <a
-            href={CALENDLY_URL}
+            href={CALENDLY_URLS[lang]}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 rounded-full bg-clay px-4 py-2 text-center font-medium text-olive-900 transition hover:bg-clay-light"

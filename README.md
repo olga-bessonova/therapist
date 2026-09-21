@@ -1,4 +1,4 @@
-# Chynara — Hypnotherapy & Reiki
+# Chynara — Hypnosis & Reiki
 
 **Live site: [chynarawellness.com](https://chynarawellness.com)**
 

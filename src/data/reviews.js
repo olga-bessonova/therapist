@@ -34,8 +34,8 @@ export const reviews = [
     youtubeId: "https://www.youtube.com/watch?v=cswK11_waww",
     thumbnail: "",
     quote: {
-      en: "After multiple attempts with other therapists, one deep hypnotherapy session with Chynara brought my binge-eating struggle close to fully resolved. There's still a bit of work I need to do on my own to fully let it go.",
-      ru: "После множества попыток с другими терапевтами одна глубокая сессия гипнотерапии с Чынарой почти полностью решила мою проблему с перееданием. Осталось ещё немного поработать над этим самой, чтобы отпустить окончательно.",
+      en: "After multiple attempts with other therapists, one deep hypnosis session with Chynara brought my binge-eating struggle close to fully resolved. There's still a bit of work I need to do on my own to fully let it go.",
+      ru: "После множества попыток с другими терапевтами одна глубокая сессия гипноза с Чынарой почти полностью решила мою проблему с перееданием. Осталось ещё немного поработать над этим самой, чтобы отпустить окончательно.",
     },
   },
   {
@@ -107,8 +107,8 @@ export const reviews = [
     youtubeId: "https://youtu.be/sU0WW40clAU",
     thumbnail: "",
     quote: {
-      en: "One deep hypnotherapy session with Chynara released my lifelong sugar/overeating habit — cravings for sweets are gone, sleep improved dramatically, and lasting calm set in. I highly recommend Chynara's gentle, professional work.",
-      ru: "Одна глубокая сессия гипнотерапии с Чынарой избавила меня от давней тяги к сладкому и перееданию, заметно улучшила сон и принесла устойчивое спокойствие. Я очень рекомендую Чынару как мягкого и профессионального специалиста.",
+      en: "One deep hypnosis session with Chynara released my lifelong sugar/overeating habit — cravings for sweets are gone, sleep improved dramatically, and lasting calm set in. I highly recommend Chynara's gentle, professional work.",
+      ru: "Одна глубокая сессия гипноза с Чынарой избавила меня от давней тяги к сладкому и перееданию, заметно улучшила сон и принесла устойчивое спокойствие. Я очень рекомендую Чынару как мягкого и профессионального специалиста.",
     },
   },
   
