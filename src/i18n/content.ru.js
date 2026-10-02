@@ -252,7 +252,7 @@ export const ru = {
   contact: {
     telegram: "Телеграм",
     whatsapp: "WhatsApp",
-    youtube: "Ютуб",
+    youtube: "YouTube",
     phone: "Телефон",
     cta: "Готовы начать? Запишитесь на бесплатную консультацию.",
     book: "Записаться на бесплатную консультацию",

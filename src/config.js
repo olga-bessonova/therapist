@@ -12,8 +12,7 @@ export const PHONE_HREF = "+16463537181";
 export const TELEGRAM_URL = "https://t.me/Chynara_B";
 export const WHATSAPP_HANDLE = "@chynara_b";
 export const WHATSAPP_URL = "https://wa.me/16463537181";
-// Placeholder — swap in the real profile URL.
-export const YOUTUBE_URL = "https://www.youtube.com/@Chynara";
+export const YOUTUBE_URL = "https://www.youtube.com/@Chynara-Baigazieva";
 
 export const DEVELOPER_NAME = "Olga Bessonova";
 export const DEVELOPER_SITE_URL = "https://olgabessonova.com/";
