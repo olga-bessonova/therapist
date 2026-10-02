@@ -95,14 +95,17 @@ export const ru = {
     cards: [
       {
         title: "Сеанс Рейки",
-        prices: [{ amount: "$60", label: "30 мин" }],
+        prices: [
+          { amount: "$69", label: "30 мин" },
+          { amount: "$129", label: "60 мин" },
+        ],
       },
       {
         title: "Пакет из 4 сеансов Рейки",
         subtitle: "Консультация по вашему запросу",
         prices: [
-          { amount: "$200", label: "30 мин" },
-          { amount: "$400", label: "60 мин" },
+          { amount: "$209", label: "30 мин" },
+          { amount: "$409", label: "60 мин" },
         ],
       },
       {

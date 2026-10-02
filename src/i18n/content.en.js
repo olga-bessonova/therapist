@@ -96,14 +96,17 @@ export const en = {
       {
         title: "Reiki Session",
         subtitle: "Consultation on your needs",
-        prices: [{ amount: "$60", label: "30 min" }],
+        prices: [
+          { amount: "$69", label: "30 min" },
+          { amount: "$129", label: "60 min" },
+        ],
       },
       {
         title: "Package of 4 Reiki Sessions",
         subtitle: "Consultation on your needs",
         prices: [
-          { amount: "$200", label: "30 min" },
-          { amount: "$400", label: "60 min" },
+          { amount: "$209", label: "30 min" },
+          { amount: "$409", label: "60 min" },
         ],
       },
       {
