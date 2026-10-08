@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { useLanguage } from "../i18n/LanguageContext";
 import { CALENDLY_URLS } from "../config";
 import Terms from "./Terms";
+import BookingTermsModal from "./BookingTermsModal";
 
 export default function Pricing() {
   const { lang, t } = useLanguage();
+  const [booking, setBooking] = useState(null);
 
   return (
     <section id="pricing" className="relative scroll-mt-20 overflow-hidden bg-cream py-16 sm:py-24">
@@ -46,9 +49,9 @@ export default function Pricing() {
               key={card.title}
               className="flex flex-col rounded-2xl border border-olive-100 bg-white/60 p-6 shadow-sm"
             >
-              <h3 className="font-display text-base font-medium text-ink">{card.title}</h3>
+              <h3 className="font-display text-center text-base font-medium text-ink">{card.title}</h3>
               {card.subtitle && (
-                <p className="mt-1 text-xs text-ink-soft/80">{card.subtitle}</p>
+                <p className="mt-1 text-center text-xs text-ink-soft/80">{card.subtitle}</p>
               )}
 
               <div className="mt-4 flex-1 space-y-2">
@@ -59,15 +62,19 @@ export default function Pricing() {
                       {p.amount}
                     </span>
                     {p.url && (
-                      <a
-                        href={p.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setBooking({
+                            url: p.url,
+                            service: p.label ? `${card.title} — ${p.label}` : card.title,
+                          })
+                        }
                         aria-label={`${t.pricing.bookLabel}: ${card.title}${p.label ? `, ${p.label}` : ""}`}
                         className="shrink-0 rounded-full bg-olive-900 px-4 py-1.5 text-sm font-medium text-cream transition hover:bg-olive-600"
                       >
                         {t.pricing.bookLabel}
-                      </a>
+                      </button>
                     )}
                   </div>
                 ))}
@@ -77,6 +84,8 @@ export default function Pricing() {
           ))}
         </div>
       </div>
+
+      {booking && <BookingTermsModal booking={booking} onClose={() => setBooking(null)} />}
     </section>
   );
 }

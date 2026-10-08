@@ -253,6 +253,35 @@ export const en = {
       "Thank you for choosing to partner with me on your wellness and personal development journey. To ensure complete clarity before you schedule, please note that all sessions focus strictly on non-therapeutic hypnotism to encourage positive thinking and build your self-hypnosis skills, alongside Reiki services to support relaxation and stress reduction.",
       "These offerings are purely educational, motivational, and complementary in nature. They are not represented as any form of medical, behavioral, or mental health care, and by law, no health benefit claims are made for these services. By booking a session, you acknowledge and agree that these sessions do not replace professional medical or psychological treatment.",
     ],
+    points: [
+      {
+        title: "Privacy & Confidentiality",
+        text: "Your personal information and session details remain strictly confidential. I never share or sell your data.",
+      },
+      {
+        title: "Payment",
+        text: "Full advance payment is required to secure your single session or multi-session package.",
+      },
+      {
+        title: "Cancellations & Missed Appointments",
+        text: "Please provide at least 24 hours' notice if you need to reschedule or cancel. Appointments canceled with less than 24 hours' notice, or missed entirely, will incur a 50% fee.",
+      },
+      {
+        title: "Late Arrivals",
+        text: "Out of respect for the next scheduled client, late arrivals will still end at the originally scheduled time. The full session fee remains applicable.",
+      },
+      {
+        title: "Refunds",
+        text: "All completed Reiki and hypnosis sessions are final and non-refundable.",
+      },
+    ],
+    modal: {
+      heading: "Before you book",
+      intro: "Please review the booking terms:",
+      agree: "I have read and agree to the booking terms.",
+      proceed: "Proceed to booking",
+      cancel: "Cancel",
+    },
   },
   contact: {
     telegram: "Telegram",
