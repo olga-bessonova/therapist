@@ -10,7 +10,6 @@ import os from "node:os";
 
 import { en } from "../src/i18n/content.en.js";
 import { ru } from "../src/i18n/content.ru.js";
-import { SITE_NAME } from "../src/config.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const publicDir = path.join(__dirname, "..", "public");
@@ -31,14 +30,12 @@ const LANGS = [
     dict: en,
     subtitle: "Internationally certified hypnotist and Reiki Master",
     cover: "A short guide to help you arrive ready — in body, space, and mind.",
-    footerName: SITE_NAME,
   },
   {
     code: "ru",
     dict: ru,
     subtitle: "Международно сертифицированный гипнотизёр и Мастер Рейки",
     cover: "Короткое руководство, которое поможет вам прийти на сеанс готовыми — телом, пространством и разумом.",
-    footerName: SITE_NAME,
   },
 ];
 
@@ -200,7 +197,7 @@ function buildHtml({ code, dict, subtitle, cover }) {
 </head>
 <body>
   <div class="cover">
-    <p class="cover-eyebrow">${esc(dict.nav.name)} &middot; ${esc(subtitle)}</p>
+    <p class="cover-eyebrow">${esc(dict.fullName)} &middot; ${esc(subtitle)}</p>
     <h1 class="cover-title">${esc(prep.heading)}</h1>
     <p class="cover-sub">${esc(cover)}</p>
     <img class="cover-image" src="${COVER_IMAGE}" />
@@ -235,7 +232,7 @@ async function main() {
       headerTemplate: "<div></div>",
       footerTemplate: `
         <div style="width:100%; font-family: -apple-system, Helvetica, Arial, sans-serif; font-size:8pt; color:#8a8f78; text-align:center; padding-top:2mm;">
-          ${esc(lang.footerName)} &nbsp;&middot;&nbsp; <span class="pageNumber"></span> / <span class="totalPages"></span>
+          ${esc(lang.dict.fullName)} &nbsp;&middot;&nbsp; <span class="pageNumber"></span> / <span class="totalPages"></span>
         </div>
       `,
     });

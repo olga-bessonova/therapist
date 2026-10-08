@@ -1,9 +1,9 @@
 import { Phone } from "lucide-react";
 import { useLanguage } from "../i18n/LanguageContext";
+import { useBooking } from "./BookingContext";
 import { TelegramIcon, WhatsAppIcon, YouTubeIcon } from "./BrandIcons";
 import {
   ADDRESS,
-  CALENDLY_URLS,
   PHONE,
   PHONE_HREF,
   TELEGRAM_URL,
@@ -12,20 +12,20 @@ import {
 } from "../config";
 
 export default function Contact() {
-  const { lang, t } = useLanguage();
+  const { t } = useLanguage();
+  const { openFreeConsultation } = useBooking();
 
   return (
     <section id="contact" className="scroll-mt-20 bg-olive-900 pt-16 text-cream sm:pt-20">
       <div className="mx-auto max-w-3xl px-5 text-center sm:px-8">
         <h2 className="font-display text-xl font-medium sm:text-2xl">{t.contact.cta}</h2>
-        <a
-          href={CALENDLY_URLS[lang]}
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          type="button"
+          onClick={openFreeConsultation}
           className="mt-6 inline-block rounded-full bg-clay px-6 py-3 text-sm font-medium text-olive-900 transition hover:bg-clay-light"
         >
           {t.contact.book}
-        </a>
+        </button>
 
         <div className="mt-12 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 text-sm text-olive-100 sm:mt-16">
           <a

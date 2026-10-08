@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "../i18n/LanguageContext";
-import { CALENDLY_URLS } from "../config";
+import { useBooking } from "./BookingContext";
 
 export default function FloatingBookButton() {
-  const { lang, t } = useLanguage();
+  const { t } = useLanguage();
+  const { openFreeConsultation } = useBooking();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -16,10 +17,9 @@ export default function FloatingBookButton() {
   }, []);
 
   return (
-    <a
-      href={CALENDLY_URLS[lang]}
-      target="_blank"
-      rel="noopener noreferrer"
+    <button
+      type="button"
+      onClick={openFreeConsultation}
       aria-label={t.nav.book}
       className={`group fixed top-1/2 right-6 z-40 grid h-16 -translate-y-1/2 grid-cols-[4rem_0fr] items-center overflow-hidden rounded-full bg-clay text-olive-900 shadow-lg transition-all duration-300 ease-out hover:grid-cols-[4rem_1fr] hover:bg-clay-light sm:right-12 sm:h-[100px] sm:grid-cols-[100px_0fr] sm:hover:grid-cols-[100px_1fr] ${
         visible ? "translate-x-0 opacity-100" : "pointer-events-none translate-x-4 opacity-0"
@@ -31,6 +31,6 @@ export default function FloatingBookButton() {
       <span className="overflow-hidden pr-0 text-sm font-medium whitespace-nowrap transition-[padding] duration-300 group-hover:pr-7 sm:text-base sm:group-hover:pr-9">
         {t.nav.book}
       </span>
-    </a>
+    </button>
   );
 }

@@ -2,7 +2,6 @@ import { useLanguage } from "../i18n/LanguageContext";
 import { GitHubIcon, LinkedInIcon } from "./BrandIcons";
 import { Globe } from "lucide-react";
 import {
-  SITE_NAME,
   DEVELOPER_NAME,
   DEVELOPER_SITE_URL,
   DEVELOPER_GITHUB_URL,
@@ -16,9 +15,9 @@ export default function Footer() {
   return (
     <footer className="bg-olive-900 text-cream">
       <div className="mx-auto max-w-6xl px-5 py-8 text-center text-xs text-olive-100/70 sm:px-8">
-        <p>{SITE_NAME}</p>
+        <p>{t.fullName}</p>
         <p className="mt-1">
-          © {year} {SITE_NAME}. {t.footer.rights}
+          © {year} {t.fullName}. {t.footer.rights}
         </p>
 
         <div className="mt-4 flex items-center justify-center gap-2 border-t border-cream/10 pt-4 text-olive-100/40">

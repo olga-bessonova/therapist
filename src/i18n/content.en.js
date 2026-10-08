@@ -1,7 +1,8 @@
 export const en = {
   htmlLang: "en",
+  fullName: "Chynara Baigazieva",
   meta: {
-    title: "Chynara — Certified Hypnotist & Reiki Master in NYC",
+    title: "Chynara Baigazieva — Certified Hypnotist & Reiki Master in NYC",
     description:
       "Internationally certified hypnotist, Reiki Master, and therapist serving Brooklyn and New York City. Resolve anxiety, insomnia, phobias, and inner blocks through hypnosis and Reiki — online and in person.",
     keywords:

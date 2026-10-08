@@ -6,6 +6,7 @@ import { SITE_URL } from "../config";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import FloatingBookButton from "./FloatingBookButton";
+import { BookingProvider } from "./BookingContext";
 
 function upsertMeta(attr, value, contentValue) {
   let el = document.head.querySelector(`meta[${attr}="${value}"]`);
@@ -48,7 +49,7 @@ export default function Layout() {
     upsertMeta("name", "description", description);
     upsertMeta("name", "keywords", t.meta.keywords);
     upsertMeta("property", "og:type", "website");
-    upsertMeta("property", "og:site_name", t.nav.name);
+    upsertMeta("property", "og:site_name", t.fullName);
     upsertMeta("property", "og:title", title);
     upsertMeta("property", "og:description", description);
     upsertMeta("property", "og:url", url);
@@ -72,14 +73,16 @@ export default function Layout() {
 
   return (
     <LanguageContext.Provider value={{ lang, t }}>
-      <div className="flex min-h-screen flex-col bg-cream">
-        <Nav />
-        <main className="flex-1">
-          <Outlet />
-        </main>
-        <Footer />
-        <FloatingBookButton />
-      </div>
+      <BookingProvider>
+        <div className="flex min-h-screen flex-col bg-cream">
+          <Nav />
+          <main className="flex-1">
+            <Outlet />
+          </main>
+          <Footer />
+          <FloatingBookButton />
+        </div>
+      </BookingProvider>
     </LanguageContext.Provider>
   );
 }

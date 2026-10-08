@@ -1,12 +1,10 @@
-import { useState } from "react";
 import { useLanguage } from "../i18n/LanguageContext";
-import { CALENDLY_URLS } from "../config";
+import { useBooking } from "./BookingContext";
 import Terms from "./Terms";
-import BookingTermsModal from "./BookingTermsModal";
 
 export default function Pricing() {
-  const { lang, t } = useLanguage();
-  const [booking, setBooking] = useState(null);
+  const { t } = useLanguage();
+  const { openBooking, openFreeConsultation } = useBooking();
 
   return (
     <section id="pricing" className="relative scroll-mt-20 overflow-hidden bg-cream py-16 sm:py-24">
@@ -31,14 +29,13 @@ export default function Pricing() {
         </div>
 
         <div className="mt-16 flex justify-center">
-          <a
-            href={CALENDLY_URLS[lang]}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            onClick={openFreeConsultation}
             className="inline-block rounded-full bg-olive-900 px-8 py-4 text-base font-medium text-cream shadow-lg transition hover:scale-105 hover:bg-olive-800"
           >
             {t.nav.book}
-          </a>
+          </button>
         </div>
 
         <Terms />
@@ -65,7 +62,7 @@ export default function Pricing() {
                       <button
                         type="button"
                         onClick={() =>
-                          setBooking({
+                          openBooking({
                             url: p.url,
                             service: p.label ? `${card.title} — ${p.label}` : card.title,
                           })
@@ -85,7 +82,6 @@ export default function Pricing() {
         </div>
       </div>
 
-      {booking && <BookingTermsModal booking={booking} onClose={() => setBooking(null)} />}
     </section>
   );
 }

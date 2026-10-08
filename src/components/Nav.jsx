@@ -2,10 +2,11 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "../i18n/LanguageContext";
-import { CALENDLY_URLS } from "../config";
+import { useBooking } from "./BookingContext";
 
 export default function Nav() {
   const { lang, t } = useLanguage();
+  const { openFreeConsultation } = useBooking();
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const isFaqPage = location.pathname.endsWith("/faq");
@@ -49,26 +50,24 @@ export default function Nav() {
         </nav>
 
         <div className="flex flex-1 justify-center md:hidden">
-          <a
-            href={CALENDLY_URLS[lang]}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            onClick={openFreeConsultation}
             className="rounded-full bg-clay px-2.5 py-1.5 text-xs font-medium whitespace-nowrap text-olive-900 transition hover:bg-clay-light"
           >
             {t.nav.bookShort}
-          </a>
+          </button>
         </div>
 
         <div className="flex items-center gap-2 sm:gap-4">
           <LangSwitch lang={lang} />
-          <a
-            href={CALENDLY_URLS[lang]}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            onClick={openFreeConsultation}
             className="hidden rounded-full bg-clay px-4 py-2 text-center text-sm font-medium text-olive-900 transition hover:bg-clay-light md:inline-block"
           >
             {t.nav.book}
-          </a>
+          </button>
           <button
             type="button"
             onClick={() => setMenuOpen((v) => !v)}
@@ -113,14 +112,16 @@ export default function Nav() {
           >
             {t.nav.faq}
           </Link>
-          <a
-            href={CALENDLY_URLS[lang]}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            onClick={() => {
+              setMenuOpen(false);
+              openFreeConsultation();
+            }}
             className="mt-2 rounded-full bg-clay px-4 py-2 text-center font-medium text-olive-900 transition hover:bg-clay-light"
           >
             {t.nav.book}
-          </a>
+          </button>
         </nav>
       )}
     </header>
