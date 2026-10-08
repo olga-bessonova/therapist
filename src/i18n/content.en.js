@@ -92,57 +92,58 @@ export const en = {
         text: "Reiki + Hypnosis — a combined approach: we shift your mindset and restore your energy at the same time. The most requested format.",
       },
     ],
+    bookLabel: "Book",
     cards: [
       {
         title: "Reiki Session",
         subtitle: "Consultation on your needs",
         prices: [
-          { amount: "$69", label: "30 min" },
-          { amount: "$129", label: "60 min" },
+          { amount: "$69", label: "30 min", url: "https://calendly.com/chbai257/reiki-session-30-min" },
+          { amount: "$129", label: "60 min", url: "https://calendly.com/chbai257/reiki-session-60-min" },
         ],
       },
       {
         title: "Package of 4 Reiki Sessions",
         subtitle: "Consultation on your needs",
         prices: [
-          { amount: "$209", label: "30 min" },
-          { amount: "$409", label: "60 min" },
+          { amount: "$209", label: "30 min", url: "https://calendly.com/chbai257/package_of_4_reiki_session-30_min_each" },
+          { amount: "$409", label: "60 min", url: "https://calendly.com/chbai257/package_of_4_reiki_session-60_min_each" },
         ],
       },
       {
         title: "Package of 8 Reiki Sessions",
         subtitle: "Consultation on your needs",
         prices: [
-          { amount: "$350", label: "30 min" },
-          { amount: "$750", label: "60 min" },
+          { amount: "$350", label: "30 min", url: "https://calendly.com/chbai257/package-of-8-reiki-sessions-30-min-each" },
+          { amount: "$750", label: "60 min", url: "https://calendly.com/chbai257/package_of_8_reiki_session-60_min_each" },
         ],
       },
       {
         title: "Package of 3 Hypnosis Sessions",
         subtitle: "Basic transformation programs",
-        prices: [{ amount: "$750", label: "" }],
+        prices: [{ amount: "$750", label: "", url: "https://calendly.com/chbai257/package-of-3-hypnosis-sessions" }],
       },
       {
         title: "Package of 6 Hypnosis Sessions",
         subtitle: "Intensive transformation programs",
-        prices: [{ amount: "$1200", label: "" }],
+        prices: [{ amount: "$1200", label: "", url: "https://calendly.com/chbai257/package-of-6-hypnosis-sessions" }],
       },
       {
         title: "Package of 8 Hypnosis Sessions",
         subtitle: "For deep-seated trauma or chronic issues",
-        prices: [{ amount: "$1400", label: "" }],
+        prices: [{ amount: "$1400", label: "", url: "https://calendly.com/chbai257/package-of-8-hypnosis-sessions" }],
       },
       {
         title: "Package of 3 Reiki + Hypnosis Sessions",
-        prices: [{ amount: "$900", label: "" }],
+        prices: [{ amount: "$900", label: "", url: "https://calendly.com/chbai257/package-of-3-reiki-hypnosis-sessions" }],
       },
       {
         title: "Package of 6 Reiki + Hypnosis Sessions",
-        prices: [{ amount: "$1500", label: "" }],
+        prices: [{ amount: "$1500", label: "", url: "https://calendly.com/chbai257/package-of-6-reiki-hypnosis-sessions" }],
       },
       {
         title: "Package of 8 Reiki + Hypnosis Sessions",
-        prices: [{ amount: "$2000", label: "" }],
+        prices: [{ amount: "$2000", label: "", url: "https://calendly.com/chbai257/package-of-8-reiki-hypnosis-sessions" }],
       },
     ],
   },

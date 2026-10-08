@@ -51,14 +51,25 @@ export default function Pricing() {
                 <p className="mt-1 text-xs text-ink-soft/80">{card.subtitle}</p>
               )}
 
-              <div className="mt-4 flex-1 space-y-1">
+              <div className="mt-4 flex-1 space-y-2">
                 {card.prices.map((p, i) => (
-                  <p key={i} className="font-display flex items-baseline text-xl font-medium text-ink tabular-nums">
-                    <span className="min-w-16 shrink-0">{p.amount}</span>
-                    {p.label && (
-                      <span className="text-sm font-normal text-ink-soft">— {p.label}</span>
+                  <div key={i} className="flex items-center justify-center gap-3">
+                    <span className="font-display w-14 shrink-0 text-sm text-ink-soft">{p.label}</span>
+                    <span className="font-display w-16 shrink-0 text-xl font-medium text-ink tabular-nums">
+                      {p.amount}
+                    </span>
+                    {p.url && (
+                      <a
+                        href={p.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${t.pricing.bookLabel}: ${card.title}${p.label ? `, ${p.label}` : ""}`}
+                        className="shrink-0 rounded-full bg-olive-900 px-4 py-1.5 text-sm font-medium text-cream transition hover:bg-olive-600"
+                      >
+                        {t.pricing.bookLabel}
+                      </a>
                     )}
-                  </p>
+                  </div>
                 ))}
               </div>
 

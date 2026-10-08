@@ -92,56 +92,57 @@ export const ru = {
         text: "Рейки + Гипноз — комплексный подход: меняем мышление и восстанавливаем энергетику одновременно. Самый востребованный формат.",
       },
     ],
+    bookLabel: "Записаться",
     cards: [
       {
         title: "Сеанс Рейки",
         prices: [
-          { amount: "$69", label: "30 мин" },
-          { amount: "$129", label: "60 мин" },
+          { amount: "$69", label: "30 мин", url: "https://calendly.com/chbai257/reiki_30_min_rus" },
+          { amount: "$129", label: "60 мин", url: "https://calendly.com/chbai257/reiki_60_min_rus" },
         ],
       },
       {
         title: "Пакет из 4 сеансов Рейки",
         subtitle: "Консультация по вашему запросу",
         prices: [
-          { amount: "$209", label: "30 мин" },
-          { amount: "$409", label: "60 мин" },
+          { amount: "$209", label: "30 мин", url: "https://calendly.com/chbai257/package_4_reiki_30_min_rus" },
+          { amount: "$409", label: "60 мин", url: "https://calendly.com/chbai257/package_4_reiki_60_min_rus" },
         ],
       },
       {
         title: "Пакет из 8 сеансов Рейки",
         subtitle: "Консультация по вашему запросу",
         prices: [
-          { amount: "$350", label: "30 мин" },
-          { amount: "$750", label: "60 мин" },
+          { amount: "$350", label: "30 мин", url: "https://calendly.com/chbai257/package_8_reiki_30_min_rus" },
+          { amount: "$750", label: "60 мин", url: "https://calendly.com/chbai257/package_8_reiki_60_min_rus" },
         ],
       },
       {
         title: "Пакет из 3 сеансов гипноза",
         subtitle: "Базовые программы трансформации",
-        prices: [{ amount: "$750", label: "" }],
+        prices: [{ amount: "$750", label: "", url: "https://calendly.com/chbai257/package_3_hypnosis_rus" }],
       },
       {
         title: "Пакет из 6 сеансов гипноза",
         subtitle: "Интенсивные программы трансформации",
-        prices: [{ amount: "$1200", label: "" }],
+        prices: [{ amount: "$1200", label: "", url: "https://calendly.com/chbai257/package_6_hypnosis_rus" }],
       },
       {
         title: "Пакет из 8 сеансов гипноза",
         subtitle: "Для глубинных травм и хронических проблем",
-        prices: [{ amount: "$1400", label: "" }],
+        prices: [{ amount: "$1400", label: "", url: "https://calendly.com/chbai257/package_8_hypnosis_rus" }],
       },
       {
         title: "Пакет из 3 сеансов Рейки + Гипноза",
-        prices: [{ amount: "$900", label: "" }],
+        prices: [{ amount: "$900", label: "", url: "https://calendly.com/chbai257/package_3_reiki_hypnosis-rus" }],
       },
       {
         title: "Пакет из 6 сеансов Рейки + Гипноза",
-        prices: [{ amount: "$1500", label: "" }],
+        prices: [{ amount: "$1500", label: "", url: "https://calendly.com/chbai257/package_6_reiki_hypnosis-rus" }],
       },
       {
         title: "Пакет из 8 сеансов Рейки + Гипноза",
-        prices: [{ amount: "$2000", label: "" }],
+        prices: [{ amount: "$2000", label: "", url: "https://calendly.com/chbai257/package_8_reiki_hypnosis-rus" }],
       },
     ],
   },
