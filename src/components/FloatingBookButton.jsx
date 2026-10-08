@@ -8,8 +8,11 @@ export default function FloatingBookButton() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    // Hidden near the top and while the reviews carousel is on screen, so it doesn't cover the cards.
     function onScroll() {
-      setVisible(window.scrollY > 400);
+      const reviews = document.getElementById("reviews")?.getBoundingClientRect();
+      const reviewsInView = reviews && reviews.top < window.innerHeight && reviews.bottom > 0;
+      setVisible(window.scrollY > 400 && !reviewsInView);
     }
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });

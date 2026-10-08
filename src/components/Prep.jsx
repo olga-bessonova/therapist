@@ -9,7 +9,7 @@ export default function Prep() {
   return (
     <section
       id="prep"
-      className="relative scroll-mt-20 overflow-hidden bg-olive-900 py-16 text-cream sm:py-15"
+      className="relative scroll-mt-20 overflow-hidden bg-olive-900 pt-12 pb-16 text-cream sm:pb-15"
     >
       <div
         className="absolute inset-0 bg-cover bg-center"

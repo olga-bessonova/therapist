@@ -7,7 +7,7 @@ export default function Pricing() {
   const { openBooking, openFreeConsultation } = useBooking();
 
   return (
-    <section id="pricing" className="relative scroll-mt-20 overflow-hidden bg-cream py-16 sm:py-24">
+    <section id="pricing" className="relative scroll-mt-20 overflow-hidden bg-cream pt-12 pb-16 sm:pb-24">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url(/images/pexels-sarahdorweiler-8408553.jpg)" }}

@@ -24,7 +24,7 @@ export default function HelpGrid() {
   const { lang, t } = useLanguage();
 
   return (
-    <section className="bg-olive-800 pt-16 pb-16 sm:pt-10 sm:pb-20">
+    <section className="bg-olive-800 pt-12 pb-16 sm:pb-20">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <h2 className="font-display text-center text-2xl font-medium text-clay-light sm:text-3xl">
           {t.help.heading}
