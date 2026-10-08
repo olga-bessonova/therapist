@@ -74,7 +74,7 @@ export default function Reviews() {
   }, []);
 
   return (
-    <section id="reviews" className="scroll-mt-20 bg-cream pt-12 pb-16 sm:pb-24">
+    <section id="reviews" className="scroll-mt-20 bg-cream pt-12 pb-12">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="text-center">
           <h2 className="font-display text-2xl font-medium text-ink sm:text-3xl">

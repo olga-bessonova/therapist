@@ -16,7 +16,7 @@ export default function Contact() {
   const { openFreeConsultation } = useBooking();
 
   return (
-    <section id="contact" className="scroll-mt-20 bg-olive-900 pt-16 text-cream sm:pt-20">
+    <section id="contact" className="scroll-mt-20 bg-olive-900 pt-12 text-cream">
       <div className="mx-auto max-w-3xl px-5 text-center sm:px-8">
         <h2 className="font-display text-xl font-medium sm:text-2xl">{t.contact.cta}</h2>
         <button
