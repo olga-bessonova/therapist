@@ -28,7 +28,9 @@ export default function Pricing() {
           ))}
         </div>
 
-        <div className="mt-16 flex justify-center">
+        <Terms />
+
+        <div className="mt-10 flex justify-center">
           <button
             type="button"
             onClick={openFreeConsultation}
@@ -37,8 +39,6 @@ export default function Pricing() {
             {t.nav.book}
           </button>
         </div>
-
-        <Terms />
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {t.pricing.cards.map((card) => (

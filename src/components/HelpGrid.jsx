@@ -11,7 +11,7 @@ const HELP_IMAGES = [
   {
     src: "/images/8.jpg",
     alt: { en: "Crystal, sage, and a small Buddha on an altar", ru: "Кристалл, шалфей и статуэтка Будды на алтаре" },
-    position: "center 45%",
+    position: "center 80%",
   },
   {
     src: "/images/12.jpg",
@@ -33,19 +33,22 @@ export default function HelpGrid() {
         <MoodGallery
           lang={lang}
           images={HELP_IMAGES}
-          className="mt-8 flex justify-center gap-3 overflow-x-auto pb-2 lg:hidden"
+          className="mx-auto mt-8 grid max-w-md grid-cols-3 gap-3 lg:hidden"
+          itemClassName="aspect-square w-full"
         />
 
         {/* mobile/tablet: plain 2-col card grid, no row-matched photos */}
-        <div className="mt-10 grid auto-rows-fr gap-4 sm:grid-cols-2 lg:hidden">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:hidden">
           {t.help.items.map((item) => (
             <div
               key={item.title}
-              className="flex flex-col rounded-2xl bg-olive-700 p-6 text-cream ring-1 ring-cream/5 transition-transform duration-200 ease-out hover:scale-[1.02]"
+              className="flex flex-col rounded-2xl bg-olive-700 p-5 text-cream ring-1 ring-cream/5 transition-transform duration-200 ease-out hover:scale-[1.02]"
             >
-              <HelpIcon name={item.icon} className="h-6 w-6 text-clay" />
-              <h3 className="font-display mt-4 text-lg font-medium">{item.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-olive-100">{item.text}</p>
+              <div className="flex items-start gap-3">
+                <HelpIcon name={item.icon} className="mt-0.5 h-5 w-5 shrink-0 text-clay" />
+                <h3 className="font-display text-base leading-snug font-medium">{item.title}</h3>
+              </div>
+              <p className="mt-5 text-sm leading-relaxed text-olive-100">{item.text}</p>
             </div>
           ))}
         </div>
@@ -62,7 +65,7 @@ export default function HelpGrid() {
                 src={img.src}
                 alt={img.alt[lang]}
                 style={{ objectPosition: img.position }}
-                className="h-full w-full object-cover transition duration-700 ease-out group-hover:scale-110"
+                className="absolute inset-0 h-full w-full object-cover transition duration-700 ease-out group-hover:scale-110"
               />
             </div>
           ))}
@@ -70,12 +73,14 @@ export default function HelpGrid() {
           {t.help.items.map((item, i) => (
             <div
               key={item.title}
-              className="flex flex-col rounded-2xl bg-olive-700 p-6 text-cream ring-1 ring-cream/5 transition-transform duration-200 ease-out hover:scale-[1.02]"
+              className="flex flex-col rounded-2xl bg-olive-700 p-5 text-cream ring-1 ring-cream/5 transition-transform duration-200 ease-out hover:scale-[1.02]"
               style={{ gridColumn: (i % 3) + 2, gridRow: Math.floor(i / 3) + 1 }}
             >
-              <HelpIcon name={item.icon} className="h-6 w-6 text-clay" />
-              <h3 className="font-display mt-4 text-lg font-medium">{item.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-olive-100">{item.text}</p>
+              <div className="flex items-start gap-3">
+                <HelpIcon name={item.icon} className="mt-0.5 h-5 w-5 shrink-0 text-clay" />
+                <h3 className="font-display text-base leading-snug font-medium">{item.title}</h3>
+              </div>
+              <p className="mt-5 text-sm leading-relaxed text-olive-100">{item.text}</p>
             </div>
           ))}
         </div>

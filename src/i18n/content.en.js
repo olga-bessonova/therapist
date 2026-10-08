@@ -250,6 +250,8 @@ export const en = {
   },
   terms: {
     heading: "Important Client Information & Booking Terms",
+    more: "See more",
+    less: "See less",
     paragraphs: [
       "Thank you for choosing to partner with me on your wellness and personal development journey. To ensure complete clarity before you schedule, please note that all sessions focus strictly on non-therapeutic hypnotism to encourage positive thinking and build your self-hypnosis skills, alongside Reiki services to support relaxation and stress reduction.",
       "These offerings are purely educational, motivational, and complementary in nature. They are not represented as any form of medical, behavioral, or mental health care, and by law, no health benefit claims are made for these services. By booking a session, you acknowledge and agree that these sessions do not replace professional medical or psychological treatment.",

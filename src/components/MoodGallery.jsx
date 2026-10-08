@@ -11,13 +11,18 @@ export const FAQ_IMAGES = [
   },
 ];
 
-export default function MoodGallery({ lang, images = FAQ_IMAGES, className = "" }) {
+export default function MoodGallery({
+  lang,
+  images = FAQ_IMAGES,
+  className = "",
+  itemClassName = "aspect-[3/4] w-32 shrink-0 sm:w-40 lg:w-full",
+}) {
   return (
     <div className={className}>
       {images.map((img) => (
         <div
           key={img.src}
-          className="group relative aspect-[3/4] w-32 shrink-0 overflow-hidden rounded-2xl shadow-md ring-1 ring-black/5 sm:w-40 lg:w-full"
+          className={`group relative overflow-hidden rounded-2xl shadow-md ring-1 ring-black/5 ${itemClassName}`}
         >
           <img
             src={img.src}
