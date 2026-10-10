@@ -43,9 +43,10 @@ function esc(s) {
   return String(s).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]);
 }
 
-function renderSection(section, imageAfter) {
+function renderSection(section, image) {
   return `
     <section class="block">
+      ${image ? `<img class="side-image" src="${image}" />` : ""}
       <h2>${esc(section.heading)}</h2>
       ${section.subheading ? `<p class="subheading">${esc(section.subheading)}</p>` : ""}
       ${section.intro ? `<p>${esc(section.intro)}</p>` : ""}
@@ -57,7 +58,6 @@ function renderSection(section, imageAfter) {
       }
       ${section.note ? `<p class="note">${esc(section.note)}</p>` : ""}
     </section>
-    ${imageAfter ? `<div class="figure"><img src="${imageAfter}" /></div>` : ""}
   `;
 }
 
@@ -93,8 +93,7 @@ function buildHtml({ code, dict, subtitle, cover }) {
   }
 
   .cover {
-    break-after: page;
-    margin-bottom: 4mm;
+    margin-bottom: 10mm;
   }
   .cover-eyebrow {
     font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -127,8 +126,11 @@ function buildHtml({ code, dict, subtitle, cover }) {
     display: block;
   }
 
-  .content {
-    padding: 0;
+  /* Inner padding so text doesn't touch the edge of the cream background; cloned on every page. */
+  .page {
+    padding: 10mm 12mm;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
   }
   .intro {
     font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -143,6 +145,15 @@ function buildHtml({ code, dict, subtitle, cover }) {
   .block {
     break-inside: avoid;
     margin-bottom: 7mm;
+    display: flow-root;
+  }
+  .side-image {
+    float: right;
+    width: 42mm;
+    height: 42mm;
+    object-fit: cover;
+    border-radius: 3mm;
+    margin: 1mm 0 3mm 6mm;
   }
   h2 {
     font-size: 15pt;
@@ -181,21 +192,13 @@ function buildHtml({ code, dict, subtitle, cover }) {
     border-radius: 2mm;
     padding: 3mm 4mm;
     margin-top: 2mm;
+    display: flow-root; /* sits beside a floated photo instead of running under it */
   }
 
-  .figure {
-    break-inside: avoid;
-    margin: 0 0 8mm;
-  }
-  .figure img {
-    width: 100%;
-    height: 55mm;
-    object-fit: cover;
-    border-radius: 3mm;
-  }
 </style>
 </head>
 <body>
+<div class="page">
   <div class="cover">
     <p class="cover-eyebrow">${esc(dict.fullName)} &middot; ${esc(subtitle)}</p>
     <h1 class="cover-title">${esc(prep.heading)}</h1>
@@ -207,6 +210,7 @@ function buildHtml({ code, dict, subtitle, cover }) {
     <p class="intro">${esc(prep.intro)}</p>
     ${sectionsHtml}
   </div>
+</div>
 </body>
 </html>`;
 }
