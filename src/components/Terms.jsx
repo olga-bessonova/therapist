@@ -29,6 +29,17 @@ export default function Terms() {
               <strong className="font-semibold text-ink">{point.title}:</strong> {point.text}
             </p>
           ))}
+
+          <h3 className="font-display pt-3 text-sm font-medium text-ink">{t.terms.recording.title}</h3>
+          <p>{t.terms.recording.intro}</p>
+          {t.terms.recording.agree && <p>{t.terms.recording.agree}</p>}
+          <ul className="list-disc space-y-2 pl-5">
+            {t.terms.recording.points.map((point) => (
+              <li key={point.title}>
+                <strong className="font-semibold text-ink">{point.title}:</strong> {point.text}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 

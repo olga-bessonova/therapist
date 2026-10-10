@@ -278,8 +278,28 @@ export const en = {
         text: "All completed Reiki and hypnosis sessions are final and non-refundable.",
       },
     ],
+    recording: {
+      title: "Audio Recording & Liability Agreement",
+      intro:
+        "To ensure the highest standard of professional accountability, safety, and liability protection for both the client and the practitioner, all hypnosis sessions may be audio-recorded.",
+      agree: "By booking a session, you understand and agree to the following conditions:",
+      points: [
+        {
+          title: "Purpose",
+          modalTitle: "Recordings",
+          text: "Recordings are captured strictly for quality assurance, accurate record-keeping, and legal/liability documentation.",
+        },
+        {
+          title: "Strict Confidentiality",
+          text: "These audio files are treated as highly confidential client data. They are stored securely in an encrypted, password-protected environment and will never be sold, shared, or published.",
+        },
+        {
+          title: "No Distribution",
+          text: "These internal recordings are the property of the practice and are kept solely for liability purposes; they are not distributed to the client or any third party unless required by a court of law.",
+        },
+      ],
+    },
     modal: {
-      heading: "Before you book",
       intro: "Please review the booking terms:",
       agree: "I have read and agree to the booking terms.",
       proceed: "Proceed to booking",

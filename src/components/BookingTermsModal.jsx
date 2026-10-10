@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { X } from "lucide-react";
+import { ChevronDown, X } from "lucide-react";
 import { useLanguage } from "../i18n/LanguageContext";
 
 // Shown before opening a paid Calendly booking: key terms + "I agree" checkbox.
@@ -7,6 +7,7 @@ export default function BookingTermsModal({ booking, onClose }) {
   const { t } = useLanguage();
   const m = t.terms.modal;
   const [agreed, setAgreed] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     const onKey = (e) => e.key === "Escape" && onClose();
@@ -40,21 +41,41 @@ export default function BookingTermsModal({ booking, onClose }) {
           <X className="h-5 w-5" />
         </button>
 
-        <h2 id="booking-terms-heading" className="font-display pr-6 text-xl font-medium text-ink">
-          {m.heading}
+        <h2 id="booking-terms-heading" className="font-display pr-6 text-lg font-medium text-ink">
+          {booking.service}
         </h2>
-        <p className="mt-1 text-sm text-ink-soft">{booking.service}</p>
 
-        <p className="mt-5 text-sm text-ink-soft">{m.intro}</p>
-        <ul className="mt-3 list-disc space-y-2 pl-5 text-xs leading-relaxed text-ink-soft">
+        <p className="mt-5 text-xs text-ink-soft">{m.intro}</p>
+        <ul
+          id="booking-terms-list"
+          className={`mt-3 list-disc space-y-2 overflow-hidden pl-5 text-[10px] leading-relaxed text-ink-soft ${
+            expanded ? "" : "max-h-24"
+          }`}
+          style={expanded ? undefined : { maskImage: "linear-gradient(to bottom, black 50%, transparent)" }}
+        >
           {t.terms.points.map((point) => (
             <li key={point.title}>
               <strong className="font-semibold text-ink">{point.title}:</strong> {point.text}
             </li>
           ))}
+          {t.terms.recording.points.map((point) => (
+            <li key={point.title}>
+              <strong className="font-semibold text-ink">{point.modalTitle ?? point.title}:</strong> {point.text}
+            </li>
+          ))}
         </ul>
+        <button
+          type="button"
+          onClick={() => setExpanded((v) => !v)}
+          aria-expanded={expanded}
+          aria-controls="booking-terms-list"
+          className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-olive-700 hover:text-olive-900"
+        >
+          {expanded ? t.terms.less : t.terms.more}
+          <ChevronDown className={`h-3.5 w-3.5 transition ${expanded ? "rotate-180" : ""}`} />
+        </button>
 
-        <label className="mt-6 flex cursor-pointer items-start gap-3 text-sm text-ink">
+        <label className="mt-6 flex cursor-pointer items-start gap-3 text-xs text-ink">
           <input
             type="checkbox"
             checked={agreed}
@@ -68,7 +89,7 @@ export default function BookingTermsModal({ booking, onClose }) {
           <button
             type="button"
             onClick={onClose}
-            className="rounded-full px-5 py-2 text-sm font-medium text-ink-soft hover:text-ink"
+            className="rounded-full px-5 py-2 text-xs font-medium text-ink-soft hover:text-ink"
           >
             {m.cancel}
           </button>
@@ -76,7 +97,7 @@ export default function BookingTermsModal({ booking, onClose }) {
             type="button"
             onClick={proceed}
             disabled={!agreed}
-            className="rounded-full bg-olive-900 px-5 py-2 text-sm font-medium text-cream transition hover:bg-olive-600 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-olive-900"
+            className="rounded-full bg-olive-900 px-5 py-2 text-xs font-medium text-cream transition hover:bg-olive-600 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-olive-900"
           >
             {m.proceed}
           </button>
