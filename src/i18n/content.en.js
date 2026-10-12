@@ -4,9 +4,9 @@ export const en = {
   meta: {
     title: "Chynara Baigazieva — Certified Hypnotist & Reiki Master in NYC",
     description:
-      "Internationally certified hypnotist, Reiki Master, and therapist serving Brooklyn and New York City. Resolve anxiety, insomnia, phobias, and inner blocks through hypnosis and Reiki — online and in person.",
+      "Internationally certified hypnotist and Reiki Master in New York City. Clear energetic blockages, mindset barriers, and limiting beliefs — build positive thinking, achieve your personal goals, and reclaim your inner peace. Online and in person. Free consultation available.",
     keywords:
-      "certified hypnotist, therapist, Reiki master, Brooklyn, New York City, NYC, hypnosis, anxiety therapy, Reiki healing",
+      "certified hypnotist, Reiki master, hypnosis, Reiki, New York City, NYC, subconscious mind, limiting beliefs, positive thinking, inner peace",
   },
   nav: {
     name: "Chynara",
@@ -20,60 +20,60 @@ export const en = {
     bookShort: "Free Consultation",
   },
   hero: {
-    eyebrow: "Internationally certified hypnotist and Reiki Master.",
+    eyebrow: "Certified Hypnotist and Reiki Master",
     paragraphs: [
-      "With over 80 certificates from world-renowned Reiki masters and years of hands-on experience, I specialize in resolving deep inner conflicts, psychological blocks, and energetic blockages that hold you back.",
-      "Hypnosis and Reiki are powerful, evidence-based, and gentle tools for working with the subconscious mind and energy body. Together, we will find the root of your problem, and release it for good.",
+      "As an Internationally Certified Hypnotist and Reiki Master with certificates from world-renowned Reiki masters and years of dedicated experience, I specialize in helping you clear stubborn energetic blockages, mindset barriers, and the limiting beliefs that hold you back.",
+      "Hypnosis and Reiki are powerful, gentle, and time-tested tools that relax the body, focus the mind, and align your energy. Together, we will tap into the power of your subconscious mind to build positive thinking, achieve your personal goals, and reclaim your inner peace.",
     ],
     imageAlt: "Reiki session in progress",
   },
   help: {
-    heading: "What I help with",
+    heading: "Areas of Focus",
     items: [
       {
         icon: "briefcase",
-        title: "Business and Financial growth",
-        text: "Release fear around scaling or launching.",
+        title: "Business and Financial Growth",
+        text: "Release fear around scaling or launching a business, reprogram limiting beliefs around finances, and confidently align your mindset with wealth and abundance.",
       },
       {
         icon: "wind",
-        title: "Anxiety and Panic Attacks",
-        text: "Freedom from constant worry and fear of heights, flying, public speaking, etc. through Reiki and hypnosis sessions.",
+        title: "Stress Management & Confidence",
+        text: "Overcome everyday stressors and situational fears such as a fear of heights, flying, or public speaking through gentle Reiki and non-therapeutic hypnosis sessions.",
       },
       {
         icon: "smile",
-        title: "Low Self-Esteem and Self-Doubt",
-        text: "Dissolving inner barriers and overcoming impostor syndrome.",
+        title: "Self-Esteem and Mindset Shifts",
+        text: "Dissolve inner barriers, build deep confidence, and overcome feelings of professional self-doubt or imposter mindsets.",
       },
       {
         icon: "moon",
-        title: "Insomnia and Sleep Disorders",
-        text: "Restoring healthy, deep, restful sleep.",
+        title: "Relaxation & Sleep Hygiene",
+        text: "Train your mind and body to unwind deeply from everyday stress, supporting healthy, peaceful, and restful nighttime sleep habits.",
       },
       {
         icon: "users",
         title: "Relationships and Personal Boundaries",
-        text: "Improving connection with your partner, leaving toxic or codependent relationships with grace, healing a broken heart, and attracting a harmonious union.",
+        text: "Improve your communication, navigate personal and professional relationship transitions with grace, and align your energy to attract harmonious connections.",
       },
       {
         icon: "cigarette",
-        title: "Addictions and Bad Habits",
-        text: "Smoking, overeating, emotional dependency.",
+        title: "Habit Cessation & Behavior Modification",
+        text: "Break free from common lifestyle obstacles, emotional eating habits, smoking loops, and unwanted routines that no longer serve your high-level goals.",
       },
       {
         icon: "activity",
-        title: "Psychosomatics and Chronic Stress",
-        text: "Releasing physical tension and restoring energetic balance.",
+        title: "Mind-Body Balance & Stress Release",
+        text: "Release accumulated everyday stress and tension while restoring healthy, holistic energetic alignment.",
       },
       {
         icon: "dollar",
-        title: "Money Blocks and Instability",
-        text: "Reprogramming limiting money beliefs, releasing fear of poverty, increasing personal income, and attracting abundance.",
+        title: "Money Blocks & Financial Instability",
+        text: "Reprogram limiting beliefs around money, dissolve a scarcity mindset, build unwavering financial confidence, and strategically align your mindset to increase personal income and attract abundance.",
       },
       {
         icon: "heart",
-        title: "Health and Overall Well-being",
-        text: "Activating the body's self-healing processes, boosting vitality, and restoring the balance of mind, body, and soul.",
+        title: "Vitality & Overall Well-being",
+        text: "Create a deeply supportive, relaxing environment for your body to restore its natural vitality and harmonize mind, body, and spirit.",
       },
     ],
   },
@@ -82,15 +82,15 @@ export const en = {
     services: [
       {
         title: "Reiki",
-        text: "Reiki session — restoring energetic balance, relieving stress, activating self-healing. Online and in person.",
+        text: "A relaxing session focused on restoring energetic balance, relieving everyday stress, and supporting your body's natural state of well-being. Available online and in person.",
       },
       {
-        title: "Hypnosis",
-        text: "Hypnosis — working with the subconscious to remove blocks, fears, bad habits, and psychosomatic issues. Online and in person.",
+        title: "Hypnosis (Non-Therapeutic Hypnotism)",
+        text: "Working with the subconscious mind to replace unwanted habits, manage situational stress, and clear emotional blocks. Available online and in person.",
       },
       {
-        title: "Reiki + Hypnosis",
-        text: "Reiki + Hypnosis — a combined approach: we shift your mindset and restore your energy at the same time. The most requested format.",
+        title: "Reiki + Hypnosis Combo",
+        text: "A combined approach: shift your everyday mindset while deeply relaxing your body and balancing your energy at the same time. The most requested format.",
       },
     ],
     bookLabel: "Book",
@@ -325,11 +325,11 @@ export const en = {
     tabContent: {
       essentials: {
         heading: "Essentials",
-        subheading: "Get to know the philosophy behind this therapy work.",
+        subheading: "Get to know the philosophy behind this healing work.",
         items: [
           {
             q: "Who conducts the sessions?",
-            a: "All sessions are conducted personally by me — an internationally certified hypnotist and Reiki Master with over 80 certificates from world-renowned masters and years of hands-on practice.",
+            a: "All sessions are conducted personally by me — an internationally certified hypnotist and Reiki Master with over 80 certificates from world-renowned masters and years of dedicated practice.",
           },
           {
             q: "Why combine hypnosis and Reiki?",
@@ -337,11 +337,11 @@ export const en = {
           },
           {
             q: "How do these practices affect income and success?",
-            a: "Many blocks around money and success are rooted in subconscious beliefs and fears formed early in life. By working directly with the subconscious mind and clearing energetic blockages, we remove the inner resistance that keeps you stuck — opening the way for clearer decisions, confidence, and forward motion.",
+            a: "Many blocks around money and success are rooted in subconscious beliefs and early conditioning. By accessing the power of the subconscious mind and clearing energetic blockages, the inner resistance that keeps you stuck is removed — opening the way for clearer decisions, deep financial confidence, and confident forward motion.",
           },
           {
             q: "How do I formulate my intention for a session?",
-            a: "State it simply, positively, and in the present tense — focus on what you want to feel or become, not on what you want to avoid. We'll refine it together before we begin, so don't worry about getting it perfect on your own.",
+            a: "State it simply, positively, and in the present tense — focus on what you want to experience or achieve, not on what you want to avoid. The intention will be refined and clarified collaboratively before the session begins, so there is no need to worry about getting it perfect on your own.",
           },
         ],
       },
@@ -351,23 +351,23 @@ export const en = {
         items: [
           {
             q: "What is hypnosis?",
-            a: "Hypnosis is a guided, deeply relaxed state in which the conscious, critical mind steps aside so we can work directly with the subconscious — where habits, fears, and old patterns are actually stored.",
+            a: "Hypnosis is a guided, deeply relaxed state in which the conscious, critical mind steps aside, allowing for direct access to the subconscious — where everyday habits, mindset blocks, and behavioral patterns are stored.",
           },
           {
             q: "Will I be in control during hypnosis?",
             a: "Yes, always. You remain aware, you cannot be made to do anything against your values, and you can open your eyes or stop at any moment.",
           },
           {
-            q: "What are the most common issues you work with?",
-            a: "Anxiety and panic attacks, insomnia, low self-esteem, phobias, addictions and bad habits, relationship patterns, money blocks, and psychosomatic stress.",
+            q: "What topics do you most frequently work with?",
+            a: "Everyday stress and emotional tension, supporting healthy sleep habits, building self-esteem, overcoming situational fears, breaking free from unwanted routines and habit loops, harmonizing relationships, clearing financial blocks, and releasing accumulated tension.",
           },
           {
             q: "Is it safe?",
-            a: "Yes. Hypnosis is a gentle, evidence-based method. I'll always explain what to expect beforehand, and we work at a pace that feels safe for you.",
+            a: "Yes. Hypnosis is a gentle, well-established, and natural modality. What to expect is always thoroughly explained beforehand, allowing the process to unfold at a pace that feels completely comfortable and safe for you.",
           },
           {
             q: "How many sessions will I need?",
-            a: "It depends on the depth of the issue. Some things shift in a single session; deeper or long-standing patterns usually benefit from a package of 3–8 sessions.",
+            a: "It depends on the nature of your goals and the roadblocks you wish to address. Some mindset shifts can occur in a single session, while deeper or long-standing patterns usually benefit from a package of 3 to 8 sessions to build lasting habits.",
           },
         ],
       },
@@ -377,7 +377,7 @@ export const en = {
         items: [
           {
             q: "What is Reiki?",
-            a: "Reiki is an energy healing practice where I channel healing energy to restore balance in your body, release blocked energy, and support your body's own capacity to heal.",
+            a: "Reiki is a holistic energy modality focused on restoring inner balance, releasing blocked energy, and supporting your body's own natural capacity for deep relaxation and well-being.",
           },
           {
             q: "Can Reiki be done online?",
@@ -389,7 +389,7 @@ export const en = {
           },
           {
             q: "How often should I get a Reiki session?",
-            a: "For general well-being, once every few weeks is common. For a specific issue, a package of 4–8 sessions closer together tends to give more noticeable results.",
+            a: "For general well-being, once every few weeks is common. For a specific area of focus, a package of 4 to 8 sessions scheduled closer together tends to provide the most supportive environment for deep relaxation and alignment.",
           },
         ],
       },
@@ -399,15 +399,15 @@ export const en = {
         items: [
           {
             q: "What happens in a combined Reiki + Hypnosis session?",
-            a: "We begin with hypnosis to work directly with the subconscious mind, then move into Reiki to restore energetic balance and let the changes settle in the body.",
+            a: "The session begins with hypnosis to gently access the power of the subconscious mind, followed by Reiki to restore energetic balance, calm the nervous system, and allow the new positive mindset shifts to settle into the body.",
           },
           {
             q: "Who is this format best for?",
-            a: "Anyone dealing with a deep-seated issue that has both a psychological and an energetic component — chronic stress, long-standing trauma, or patterns that keep repeating despite other work.",
+            a: "Anyone experiencing persistent roadblocks that involve both an emotional and an energetic component — such as accumulated everyday stress, long-standing emotional blocks, or behavioral patterns that keep repeating despite other personal development work.",
           },
           {
             q: "Is combined work more intense than a single modality?",
-            a: "It can go deeper, yes — which is exactly why proper preparation and integration time afterward matter so much.",
+            a: "It provides a more comprehensive approach, which is exactly why allowing yourself a quiet window afterward to relax and absorb the positive mindset shifts matters so much.",
           },
         ],
       },

@@ -34,7 +34,7 @@ const LANGS = [
   {
     code: "ru",
     dict: ru,
-    subtitle: "Международно сертифицированный гипнотизёр и Мастер Рейки",
+    subtitle: "Международно сертифицированный гипнолог и Мастер Рейки",
     cover: "Короткое руководство, которое поможет вам прийти на сеанс готовыми — телом, пространством и разумом.",
   },
 ];
@@ -120,7 +120,7 @@ function buildHtml({ code, dict, subtitle, cover }) {
   }
   .cover-image {
     width: 100%;
-    height: 100mm;
+    height: 45mm;
     object-fit: cover;
     border-radius: 3mm;
     display: block;

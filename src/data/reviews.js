@@ -34,8 +34,8 @@ export const reviews = [
     youtubeId: "https://www.youtube.com/watch?v=cswK11_waww",
     thumbnail: "",
     quote: {
-      en: "After multiple attempts with other therapists, one deep hypnosis session with Chynara brought my binge-eating struggle close to fully resolved. There's still a bit of work I need to do on my own to fully let it go.",
-      ru: "После множества попыток с другими терапевтами одна глубокая сессия гипноза с Чынарой почти полностью решила мою проблему с перееданием. Осталось ещё немного поработать над этим самой, чтобы отпустить окончательно.",
+      en: "After multiple attempts with other specialists, one deep hypnosis session with Chynara brought my binge-eating struggle close to fully resolved. There's still a bit of work I need to do on my own to fully let it go.",
+      ru: "После множества попыток с другими специалистами одна глубокая сессия гипноза с Чынарой почти полностью решила мою проблему с перееданием. Осталось ещё немного поработать над этим самой, чтобы отпустить окончательно.",
     },
   },
   {
@@ -118,8 +118,8 @@ export const reviews = [
     youtubeId: "https://youtube.com/shorts/D5QpGjwytHw?feature=share",
     thumbnail: "",
     quote: {
-      en: "Working through my guilt over saying no with Chynara's gentle hypnotherapy session completely quieted my spiraling thoughts, and a week later I felt none of that guilt even facing the same trigger.",
-      ru: "Мягкая сессия гипнотерапии с Чынарой полностью успокоила мои навязчивые мысли о вине после отказа, и спустя неделю я даже не почувствовала этой вины, столкнувшись с тем же триггером.",
+      en: "Working through my guilt over saying no with Chynara's gentle hypnosis session completely quieted my spiraling thoughts, and a week later I felt none of that guilt even facing the same trigger.",
+      ru: "Мягкая сессия гипноза с Чынарой полностью успокоила мои навязчивые мысли о вине после отказа, и спустя неделю я даже не почувствовала этой вины, столкнувшись с тем же триггером.",
     },
   },
 
@@ -140,8 +140,8 @@ export const reviews = [
     youtubeId: "https://youtube.com/shorts/s4fK0mkSGKg",
     thumbnail: "",
     quote: {
-      en: "In my very first hypnotherapy session, Chynara guided me deeply and gently through a difficult childhood memory I hadn't even known I carried, leaving me with a powerful anchor that fully rewrote a trauma I'd held for years.",
-      ru: "В моей самой первой сессии гипнотерапии Чынара бережно и глубоко провела меня через тяжёлое детское воспоминание, о котором я даже не помнила, и оставила мощный якорь, полностью переписавший травму, которую я носила много лет.",
+      en: "In my very first hypnosis session, Chynara guided me deeply and gently through a difficult childhood memory I hadn't even known I carried, leaving me with a powerful anchor that fully rewrote a trauma I'd held for years.",
+      ru: "В моей самой первой сессии гипноза Чынара бережно и глубоко провела меня через тяжёлое детское воспоминание, о котором я даже не помнила, и оставила мощный якорь, полностью переписавший травму, которую я носила много лет.",
     },
   },
 
@@ -173,8 +173,8 @@ export const reviews = [
     youtubeId: "https://youtube.com/shorts/71eN4hQeY_4?feature=share",
     thumbnail: "",
     quote: {
-      en: "A single session with Chynara left me deeply grateful — she's a skilled, clear hypnotherapist who guides you with real understanding to work through and resolve your issues.",
-      ru: "Одна проработка с Чынарой оставила меня искренне благодарной — она состоявшийся, чёткий гипнотерапевт, который с пониманием ведёт тебя к решению твоих проблем.",
+      en: "A single session with Chynara left me deeply grateful — she's a skilled, clear hypnotist who guides you with real understanding to work through and resolve your issues.",
+      ru: "Одна проработка с Чынарой оставила меня искренне благодарной — она состоявшийся, чёткий гипнолог, который с пониманием ведёт тебя к решению твоих проблем.",
     },
   },
 
@@ -239,8 +239,8 @@ export const reviews = [
     youtubeId: "https://youtube.com/shorts/-ElVgryWrBg?feature=share",
     thumbnail: "",
     quote: {
-      en: "Working through my fear of failure with Chynara's uniquely personal approach, I took a real leap the very next day and got a positive result almost instantly — she's a caring hypnotherapist with real magic.",
-      ru: "Проработав с Чынарой страх неудачи благодаря её индивидуальному подходу, я уже на следующий день сделала реальный шаг и почти сразу получила хороший результат — она заботливый гипнотерапевт с настоящей магией.",
+      en: "Working through my fear of failure with Chynara's uniquely personal approach, I took a real leap the very next day and got a positive result almost instantly — she's a caring hypnotist with real magic.",
+      ru: "Проработав с Чынарой страх неудачи благодаря её индивидуальному подходу, я уже на следующий день сделала реальный шаг и почти сразу получила хороший результат — она заботливый гипнолог с настоящей магией.",
     },
   },
 
