@@ -346,7 +346,7 @@ export const en = {
         ],
       },
       hypnosis: {
-        heading: "Hypnosis & the Subconscious",
+        heading: "Hypnosis and the Subconscious",
         subheading: "A path to lasting change through the power of your subconscious mind.",
         items: [
           {
@@ -372,7 +372,7 @@ export const en = {
         ],
       },
       reiki: {
-        heading: "Reiki & Energy Work",
+        heading: "Reiki and Energy Work",
         subheading: "A gentle, hands-on (or remote) practice for restoring balance.",
         items: [
           {

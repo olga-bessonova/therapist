@@ -16,7 +16,7 @@ export default function FaqTabs() {
   }
 
   return (
-    <section className="bg-cream py-16 sm:py-24">
+    <section className="bg-cream pt-12 pb-16 sm:pb-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <MoodGallery
           lang={lang}
@@ -25,14 +25,12 @@ export default function FaqTabs() {
 
         <div className="lg:grid lg:grid-cols-[1fr_220px] lg:items-start lg:gap-12 xl:grid-cols-[1fr_260px]">
           <div className="mx-auto max-w-3xl lg:mx-0 lg:max-w-none">
-            <div className="flex justify-center lg:justify-start">
-              <span className="rounded-full border border-olive-100 px-4 py-1.5 text-xs font-medium tracking-wide text-ink-soft uppercase">
-                {t.faq.heading}
-              </span>
-            </div>
+            <h1 className="font-display text-center text-2xl font-medium text-ink sm:text-3xl">
+              {t.faq.heading}
+            </h1>
 
-            <div className="mt-8 flex justify-center lg:justify-start">
-              <div className="flex flex-wrap justify-center gap-1 rounded-full bg-olive-100/60 p-1 lg:justify-start">
+            <div className="mt-8 flex justify-center">
+              <div className="flex flex-wrap justify-center gap-1 rounded-full bg-olive-100/60 p-1">
                 {t.faq.tabs.map((tab) => (
                   <button
                     key={tab.key}
@@ -51,13 +49,13 @@ export default function FaqTabs() {
             </div>
 
             <div className="mt-10">
-              <p className="text-xs font-medium tracking-wide text-clay-dark">
+              <p className="text-center text-xs font-medium tracking-wide text-clay-dark">
                 {String(tabIndex + 1).padStart(2, "0")} / {String(t.faq.tabs.length).padStart(2, "0")}
               </p>
-              <h2 className="font-display mt-2 text-2xl font-medium text-ink sm:text-3xl">
+              <h2 className="font-display mt-2 text-center text-2xl font-medium text-ink sm:text-3xl">
                 {current.heading}
               </h2>
-              <p className="mt-1 text-sm text-ink-soft">{current.subheading}</p>
+              <p className="mt-1 text-center text-sm text-ink-soft">{current.subheading}</p>
               <div className="mt-4 border-t border-olive-100" />
 
               <div className="mt-6 space-y-3">
