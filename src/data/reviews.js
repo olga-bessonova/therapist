@@ -14,7 +14,7 @@ export const reviews = [
     thumbnail: "",
     quote: {
       en: "Chynara responded to my request within minutes and, through one warm, easy session, helped me uncover and release the difficulty I'd been stuck on after a hard client experience — I recommend her as a skilled, wonderfully easy-to-talk-to hypnotist.",
-      ru: "Чынара откликнулась на мой запрос за считанные минуты и за одну лёгкую, тёплую сессию помогла мне найти и снять тяжесть, застрявшую после сложного случая с клиентом — рекомендую её как отличного гипнотизёра, с которой невероятно легко и приятно общаться.",
+      ru: "Чынара откликнулась на мой запрос за считанные минуты и за одну лёгкую, тёплую сессию помогла мне найти и снять тяжесть, застрявшую после сложного случая с клиентом — рекомендую её как отличного гипнолога, с которой невероятно легко и приятно общаться.",
     },
   },
   {
@@ -96,7 +96,7 @@ export const reviews = [
     thumbnail: "",
     quote: {
       en: "A gentle, warm session with Chynara helped me find clarity and stability around my purpose and direction — I feel aligned, capable, and deeply grateful for such a caring hypnotist.",
-      ru: "Тёплая, мягкая сессия с Чынарой помогла мне обрести ясность и стабильность в вопросе моего предназначения и пути — я чувствую внутреннее согласие и глубокую благодарность такому заботливому гипнотизёру.",
+      ru: "Тёплая, мягкая сессия с Чынарой помогла мне обрести ясность и стабильность в вопросе моего предназначения и пути — я чувствую внутреннее согласие и глубокую благодарность такому заботливому гипнологу.",
     },
 
   },
